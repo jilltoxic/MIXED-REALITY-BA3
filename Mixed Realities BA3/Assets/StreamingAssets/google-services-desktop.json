@@ -1,49 +1,41 @@
 {
   "project_info": {
-    "project_number": "853815832347",
-    "firebase_url": "https://mixed-realities-ba3.firebaseio.com",
-    "project_id": "mixed-realities-ba3",
-    "storage_bucket": "mixed-realities-ba3.appspot.com"
+    "project_number": "103874855780",
+    "firebase_url": "https://authdatatest.firebaseio.com",
+    "project_id": "authdatatest",
+    "storage_bucket": "authdatatest.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:853815832347:android:b479536882503a7c156dbe",
+        "mobilesdk_app_id": "1:103874855780:android:9e2c8d5939da90a6bb7071",
         "android_client_info": {
-          "package_name": "com.cgl.mixedrealitiesba3"
+          "package_name": "com.cgl.AuthDatabaseTest"
         }
       },
       "oauth_client": [
         {
-          "client_id": "853815832347-6gom8vnkpg7qgdjqrrm9m2di17u66lop.apps.googleusercontent.com",
-          "client_type": 1,
-          "android_info": {
-            "package_name": "com.cgl.mixedrealitiesba3",
-            "certificate_hash": "54b01fa7dbe21d3e9d0e4ed6cdbc94b41630116e"
-          }
-        },
-        {
-          "client_id": "853815832347-c56oajivuc23uo8oaoonjkdpmckojmr5.apps.googleusercontent.com",
+          "client_id": "103874855780-a2cfavuhobtjuq8h1oc3t7pouq8rq7fs.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyADOW9U1UsvLsI87ecE9DenGZ2PA-9AJkE"
+          "current_key": "AIzaSyA3GtAFEIzUPLsUxqa_5X7X57Q2pN9PnQs"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "853815832347-c56oajivuc23uo8oaoonjkdpmckojmr5.apps.googleusercontent.com",
+              "client_id": "103874855780-a2cfavuhobtjuq8h1oc3t7pouq8rq7fs.apps.googleusercontent.com",
               "client_type": 3
             },
             {
-              "client_id": "853815832347-t6bfupm3hcjvjigrdsg0c5hbiejdr98s.apps.googleusercontent.com",
+              "client_id": "103874855780-h2j3j2jci2bn3n7ami6ipr4ntu2anv0u.apps.googleusercontent.com",
               "client_type": 2,
               "ios_info": {
-                "bundle_id": "com.cgl.mixedrealitiesba3"
+                "bundle_id": "com.cgl.AuthDatabaseTest"
               }
             }
           ]
