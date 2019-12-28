@@ -37,7 +37,7 @@ public class FirebaseManager
     public void InitializeFirebase()
     {
         //Auth.StateChanged += AuthStateChanged; //Example: How to register a function to be called as a Response to the state change. See LoginScreen.cs for a proper implementation
-        FirebaseApp.DefaultInstance.SetEditorDatabaseUrl("https://authdatatest.firebaseio.com/");
+        FirebaseApp.DefaultInstance.SetEditorDatabaseUrl("https://mixed-realities-ba3.firebaseio.com/");
         databaseReference = FirebaseDatabase.DefaultInstance.RootReference;
     }
 
@@ -62,6 +62,7 @@ public class FirebaseManager
             }
 
             // Firebase user has been created.
+
             Firebase.Auth.FirebaseUser newUser = task.Result;
             UserProfile profile = new UserProfile();
             profile.DisplayName = displayName;
@@ -136,6 +137,7 @@ public class FirebaseManager
 
 
     // -------------------------------- DATABASE -----------------------------------------
+
     public void WriteNewUser(User user)
     {
         string json = JsonUtility.ToJson(user);
@@ -155,7 +157,6 @@ public class FirebaseManager
             }
         });
     }
-
 
     public void UpdateCurrentUser(User user)
     {
@@ -195,5 +196,110 @@ public class FirebaseManager
                 return;
             }
         });
+    }
+
+    // -------------------------------- SCRUB LORDS TRYIN REAL HARD -----------------------------------------
+
+    public void UpdateTeamScore(int teamNumber)
+    {
+        Debug.Log("Updating Team Score");
+        databaseReference.Child("GoldenCircleScore").SetValueAsync(50).ContinueWith(task =>
+        {
+            if (task.IsFaulted)
+            {
+                // Handle the error...
+                Debug.LogError(task.Exception);
+                return;
+            }
+            else if (task.IsCompleted)
+            {
+                Debug.Log("Done");
+                return;
+            }
+        });
+    }
+
+    public int GetTeamScore(int team, UserProfileWindow userProfileWindow)
+    {
+        int teamScore = -1;
+        Debug.Log("Getting Team Score");
+        string scoreValueName;
+
+        if (team == 0)
+        {
+            scoreValueName = "RubyRiderScore";
+        }
+        else
+        {
+            scoreValueName = "GoldenCircleScore";
+        }
+
+        databaseReference.Child(scoreValueName).GetValueAsync().ContinueWith(task =>
+        {
+            if (task.IsFaulted)
+            {
+                // Handle the error...
+                Debug.LogError(task.Exception);
+                return;
+            }
+            else if (task.IsCompleted)
+            {
+                DataSnapshot score = task.Result;
+                teamScore = System.Convert.ToInt32(score.Value);
+                userProfileWindow.UpdateTeamScores(team, teamScore);
+                Debug.Log("Done");
+                return;
+            }
+        });
+
+        return teamScore;
+    }
+
+    public void GetAllUsers()
+    {
+        Debug.Log("Retrieving All Users");
+        databaseReference.Child("users").GetValueAsync().ContinueWith(task =>
+        {
+            if (task.IsFaulted)
+            {
+                // Handle the error...
+                Debug.LogError(task.Exception);
+                return;
+            }
+            else if (task.IsCompleted)
+            {
+                DataSnapshot userIDList = task.Result;
+                foreach (var userID in userIDList.Children)
+                {
+                    GetUserInfo(userID.Key);
+                }
+                Debug.Log("Done");
+                return;
+            }
+        });
+    }
+    public User GetUserInfo(string userID)
+    {
+        User userInfo = new User();
+        Debug.Log("Retrieving User Info");
+        databaseReference.Child("users").Child(userID).GetValueAsync().ContinueWith(task =>
+        {
+            if (task.IsFaulted)
+            {
+                // Handle the error...
+                Debug.LogError(task.Exception);
+                return;
+            }
+            else if (task.IsCompleted)
+            {
+                Debug.Log("Done");
+                DataSnapshot dataSnapshot = task.Result;
+                string json = dataSnapshot.GetRawJsonValue();
+                userInfo = JsonUtility.FromJson<User>(json);
+                Debug.Log($"{userID} - Gold: {userInfo.gold}");
+                return;
+            }
+        });
+        return userInfo;
     }
 }

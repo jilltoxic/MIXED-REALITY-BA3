@@ -23,6 +23,14 @@ public class User
         this.email = email;
         this.userID = userID;
     }
+
+    public User(string username, string email, string userID, int gold)
+    {
+        this.username = username;
+        this.email = email;
+        this.userID = userID;
+        this.gold = gold;
+    }
 }
 
 public static class CurrentUser
