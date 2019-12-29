@@ -270,7 +270,7 @@ public class FirebaseManager
     public int GetTeamScore(int team, UserProfileWindow userProfileWindow)
     {
         int teamScore = -1;
-        Debug.Log("Getting Team Score");
+        //Debug.Log("Getting Team Score");
         string scoreValueName;
 
         if (team == 0)

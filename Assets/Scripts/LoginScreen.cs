@@ -77,6 +77,16 @@ public class LoginScreen : MonoBehaviour
         string mail = mailField.text;
         string password = passwordField.text;
         fbManager.LoginUser(mail, password);
+
+        if (mailField.text == "")
+        {
+            errorMessageText.text = "Please enter an E-Mail adress.";
+        }
+        else if (passwordField.text == "")
+        {
+            errorMessageText.text = "Please enter a password.";
+        }
+       
     }
 
     public void AuthStateChanged(object sender, System.EventArgs eventArgs)
