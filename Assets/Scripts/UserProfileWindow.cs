@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using UnityEngine.SceneManagement;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
@@ -58,5 +59,11 @@ public class UserProfileWindow : MonoBehaviour
     {
         if (CurrentUser.instance.gold >= 25)
             FirebaseManager.Instance.UpdateUserValue(CurrentUser.instance, "Gold", (CurrentUser.instance.gold - 25).ToString());
+    }
+
+    public void OnLogOut()
+    {
+        FirebaseManager.Instance.LogoutUser();
+        SceneManager.LoadScene("LoginScreen");
     }
 }

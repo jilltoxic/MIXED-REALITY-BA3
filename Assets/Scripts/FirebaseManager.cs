@@ -15,6 +15,7 @@ public class FirebaseManager
     {
         get { if (auth == null) auth = FirebaseAuth.DefaultInstance; return auth; }
     }
+
     Firebase.Auth.FirebaseUser user;
     public FirebaseUser User
     {
@@ -50,6 +51,7 @@ public class FirebaseManager
     public void RegisterUser(string email, string password, string displayName)
     {
         Auth.CreateUserWithEmailAndPasswordAsync(email, password).ContinueWith(task => {
+
             if (task.IsCanceled)
             {
                 Debug.LogError("CreateUserWithEmailAndPasswordAsync was canceled.");
@@ -59,6 +61,8 @@ public class FirebaseManager
             {
                 Debug.LogError("CreateUserWithEmailAndPasswordAsync encountered an error: " + task.Exception);
                 return;
+
+                
             }
 
             // Firebase user has been created.
@@ -109,6 +113,18 @@ public class FirebaseManager
             Debug.LogFormat("User signed in successfully: {0} ({1})",
                 newUser.DisplayName, newUser.UserId);
         });
+    }
+
+
+    public void LogoutUser()
+    {
+        if (auth.CurrentUser != null)
+        {
+            auth.SignOut();
+            Debug.LogFormat("User logged out successfully: {0} ({1})",
+                 CurrentUser.instance.username, CurrentUser.instance.userID);
+
+        }
     }
 
     /// <summary>
