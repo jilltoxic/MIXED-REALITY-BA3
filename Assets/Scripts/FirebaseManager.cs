@@ -54,12 +54,24 @@ public class FirebaseManager
 
             if (task.IsCanceled)
             {
-                Debug.LogError("CreateUserWithEmailAndPasswordAsync was canceled.");
+                //Debug.LogError("CreateUserWithEmailAndPasswordAsync was canceled.");
+                //return;
+
+                Firebase.FirebaseException e =
+                task.Exception.Flatten().InnerExceptions[0] as Firebase.FirebaseException;
+
+                GetErrorMessage((AuthError)e.ErrorCode);
                 return;
             }
             if (task.IsFaulted)
             {
-                Debug.LogError("CreateUserWithEmailAndPasswordAsync encountered an error: " + task.Exception);
+                //Debug.LogError("CreateUserWithEmailAndPasswordAsync encountered an error: " + task.Exception);
+                //return;
+
+                Firebase.FirebaseException e =
+                task.Exception.Flatten().InnerExceptions[0] as Firebase.FirebaseException;
+
+                GetErrorMessage((AuthError)e.ErrorCode);
                 return;
 
                 
@@ -81,6 +93,7 @@ public class FirebaseManager
                 {
                     Debug.LogError("UpdateUserProfileAsync encountered an error: " + task2.Exception);
                     return;
+
                 }
             });
             Debug.LogFormat("Firebase user created successfully: {0} ({1})",
@@ -105,7 +118,13 @@ public class FirebaseManager
             }
             if (task.IsFaulted)
             {
-                Debug.LogError("SignInWithEmailAndPasswordAsync encountered an error: " + task.Exception);
+                //Debug.LogError("SignInWithEmailAndPasswordAsync encountered an error: " + task.Exception);
+                //return;
+
+                Firebase.FirebaseException e =
+                task.Exception.Flatten().InnerExceptions[0] as Firebase.FirebaseException;
+
+                GetErrorMessage((AuthError)e.ErrorCode);
                 return;
             }
 
@@ -126,6 +145,18 @@ public class FirebaseManager
 
         }
     }
+
+
+    // errors and stuff
+
+    public void GetErrorMessage(AuthError errorCode)
+    {
+        string msg = "";
+        msg = errorCode.ToString();
+
+        Debug.Log("Error: " + msg);
+    }
+
 
     /// <summary>
     /// Example Event that gets called when the user signs in/out
@@ -149,6 +180,7 @@ public class FirebaseManager
             }
         }
     }
+
 
 
 

@@ -12,6 +12,9 @@ public class LoginScreen : MonoBehaviour
     FirebaseManager fbManager;
     bool wasRegistering;
 
+    public Text errorMessageText;
+
+
     void Start()
     {
         fbManager = FirebaseManager.Instance;
@@ -26,6 +29,23 @@ public class LoginScreen : MonoBehaviour
         string displayName = displayNameField.text;
         wasRegistering = true;
         fbManager.RegisterUser(mail, password, displayName);
+
+        if(mailField.text == "")
+        {
+            errorMessageText.text = "Please enter an E-Mail adress.";
+        }
+        else if(passwordField.text == "")
+        {
+            errorMessageText.text = "Please enter a password.";
+        }
+        else if (displayNameField.text == "")
+        {
+            errorMessageText.text = "Please enter a username.";
+        }
+        else
+        {
+            errorMessageText.text = "";
+        }
     }
 
     void SetUserData()
