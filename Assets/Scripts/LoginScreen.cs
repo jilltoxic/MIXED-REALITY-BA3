@@ -32,7 +32,7 @@ public class LoginScreen : MonoBehaviour
 
         if(mailField.text == "")
         {
-            errorMessageText.text = "Please enter an E-Mail adress.";
+            errorMessageText.text = "Please enter an E-Mail address.";
         }
         else if(passwordField.text == "")
         {
@@ -68,7 +68,7 @@ public class LoginScreen : MonoBehaviour
             fbManager.User.Email,
             fbManager.User.UserId);
 
-        fbManager.UpdateCurrentUser(CurrentUser.instance);
+        fbManager.ReadCurrentUser(CurrentUser.instance);
         SceneManager.LoadScene("Main");
     }
 
@@ -78,14 +78,6 @@ public class LoginScreen : MonoBehaviour
         string password = passwordField.text;
         fbManager.LoginUser(mail, password);
 
-        if (mailField.text == "")
-        {
-            errorMessageText.text = "Please enter an E-Mail adress.";
-        }
-        else if (passwordField.text == "")
-        {
-            errorMessageText.text = "Please enter a password.";
-        }
        
     }
 
@@ -99,6 +91,7 @@ public class LoginScreen : MonoBehaviour
                 Debug.Log("Signed out " + fbManager.User.UserId);
             }
             fbManager.User = fbManager.Auth.CurrentUser;
+
             if (signedIn)
             {
                 Debug.Log("Signed in " + fbManager.User.UserId);
@@ -106,7 +99,8 @@ public class LoginScreen : MonoBehaviour
                     SetUserData();
                 else
                     GetUserData();
-                fbManager.UpdateTeamScore(CurrentUser.instance.team);
+                fbManager.SetTeamScore(CurrentUser.instance.team, 0);
+                fbManager.SetTeamScore(1, 0);
                 fbManager.GetAllUsers();
             }
         }

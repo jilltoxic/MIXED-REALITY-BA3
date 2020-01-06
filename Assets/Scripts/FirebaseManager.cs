@@ -206,7 +206,9 @@ public class FirebaseManager
         });
     }
 
-    public void UpdateCurrentUser(User user)
+    //Get current User stats
+
+    public void ReadCurrentUser(User user)
     {
         databaseReference.Child("users").Child(user.userID).GetValueAsync().ContinueWith(task => 
         {
@@ -227,6 +229,8 @@ public class FirebaseManager
         });
     }
 
+    //overwrites a user value in database
+
     public void UpdateUserValue(User user, string key, string value)
     {        
         databaseReference.Child("users").Child(user.userID).Child(key.ToLower()).SetValueAsync(value).ContinueWith(task =>
@@ -240,7 +244,7 @@ public class FirebaseManager
             else if (task.IsCompleted)
             {
                 Debug.Log("Done");
-                UpdateCurrentUser(CurrentUser.instance);
+                ReadCurrentUser(CurrentUser.instance);
                 return;
             }
         });
@@ -248,23 +252,62 @@ public class FirebaseManager
 
     // -------------------------------- SCRUB LORDS TRYIN REAL HARD -----------------------------------------
 
-    public void UpdateTeamScore(int teamNumber)
+    public void SetTeamScore(int teamNumber, int newScore)
     {
         Debug.Log("Updating Team Score");
-        databaseReference.Child("GoldenCircleScore").SetValueAsync(50).ContinueWith(task =>
+
+        if(teamNumber == 0)
         {
-            if (task.IsFaulted)
+            
+            databaseReference.Child("RubyRiderScore").SetValueAsync(50).ContinueWith(task =>
             {
-                // Handle the error...
-                Debug.LogError(task.Exception);
-                return;
-            }
-            else if (task.IsCompleted)
+                if (task.IsFaulted)
+                {
+                    // Handle the error...
+                    Debug.LogError(task.Exception);
+                    return;
+                }
+                else if (task.IsCompleted)
+                {
+                    Debug.Log("Done");
+                    return;
+                }
+            });
+        }
+
+        if(teamNumber == 1)
+        {
+
+            databaseReference.Child("GoldenCircleScore").SetValueAsync(101).ContinueWith(task =>
             {
-                Debug.Log("Done");
-                return;
-            }
-        });
+                if (task.IsFaulted)
+                {
+                    // Handle the error...
+                    Debug.LogError(task.Exception);
+                    return;
+                }
+                else if (task.IsCompleted)
+                {
+                    Debug.Log("Done");
+                    return;
+                }
+            });
+        }
+
+        //databaseReference.Child("GoldenCircleScore").SetValueAsync(50).ContinueWith(task =>
+        //{
+        //    if (task.IsFaulted)
+        //    {
+        //        // Handle the error...
+        //        Debug.LogError(task.Exception);
+        //        return;
+        //    }
+        //    else if (task.IsCompleted)
+        //    {
+        //        Debug.Log("Done");
+        //        return;
+        //    }
+        //});
     }
 
     public int GetTeamScore(int team, UserProfileWindow userProfileWindow)
