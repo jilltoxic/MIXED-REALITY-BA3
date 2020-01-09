@@ -61,6 +61,11 @@ public class UserProfileWindow : MonoBehaviour
             FirebaseManager.Instance.UpdateUserValue(CurrentUser.instance, "Gold", (CurrentUser.instance.gold - 25).ToString());
     }
 
+    public void GetPoints()
+    {
+     
+    }
+
     public void OnLogOutButton()
     {
         FirebaseManager.Instance.LogoutUser();

@@ -96,7 +96,9 @@ public class LoginScreen : MonoBehaviour
             {
                 Debug.Log("Signed in " + fbManager.User.UserId);
                 if (wasRegistering)
+                {
                     SetUserData();
+                }
                 else
                     GetUserData();
                 fbManager.SetTeamScore(CurrentUser.instance.team, 0);
