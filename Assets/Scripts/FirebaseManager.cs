@@ -40,6 +40,7 @@ public class FirebaseManager
         //Auth.StateChanged += AuthStateChanged; //Example: How to register a function to be called as a Response to the state change. See LoginScreen.cs for a proper implementation
         FirebaseApp.DefaultInstance.SetEditorDatabaseUrl("https://mixed-realities-ba3.firebaseio.com/");
         databaseReference = FirebaseDatabase.DefaultInstance.RootReference;
+        FirebaseDatabase.DefaultInstance.GetReference("teamscore").ValueChanged += GetTeamScore;
     }
 
     /// <summary>
@@ -224,7 +225,7 @@ public class FirebaseManager
                 string json = task.Result.GetRawJsonValue();
                 Debug.Log(json);
                 CurrentUser.instance = JsonUtility.FromJson<User>(json);
-                CurrentUser.instance.dirtyFlag = true;
+                UI.dirty = true;
             }
         });
     }
@@ -252,47 +253,27 @@ public class FirebaseManager
 
     // -------------------------------- SCRUB LORDS TRYIN REAL HARD -----------------------------------------
 
-    public void SetTeamScore(int teamNumber, int newScore)
+    public void SetTeamScore() //no new score yet i have no idea what i am doing 
     {
         Debug.Log("Updating Team Score");
 
-        if(teamNumber == 0)
+        string json = JsonUtility.ToJson(CurrentTeamScore.instance);
+        Debug.Log("Save JSON to Database.\nDATA: \n" + json);
+        databaseReference.Child("teamscore").SetRawJsonValueAsync(json).ContinueWith(task =>
         {
-            
-            databaseReference.Child("RubyRiderScore").SetValueAsync(50).ContinueWith(task =>
+            if (task.IsFaulted)
             {
-                if (task.IsFaulted)
-                {
-                    // Handle the error...
-                    Debug.LogError(task.Exception);
-                    return;
-                }
-                else if (task.IsCompleted)
-                {
-                    Debug.Log("Done");
-                    return;
-                }
-            });
-        }
-
-        if(teamNumber == 1)
-        {
-
-            databaseReference.Child("GoldenCircleScore").SetValueAsync(101).ContinueWith(task =>
+                // Handle the error...
+                Debug.LogError(task.Exception);
+                return;
+            }
+            else if (task.IsCompleted)
             {
-                if (task.IsFaulted)
-                {
-                    // Handle the error...
-                    Debug.LogError(task.Exception);
-                    return;
-                }
-                else if (task.IsCompleted)
-                {
-                    Debug.Log("Done");
-                    return;
-                }
-            });
-        }
+                Debug.Log("Done");
+                return;
+            }
+        });
+    }
 
         //databaseReference.Child("GoldenCircleScore").SetValueAsync(50).ContinueWith(task =>
         //{
@@ -308,24 +289,11 @@ public class FirebaseManager
         //        return;
         //    }
         //});
-    }
 
-    public int GetTeamScore(int team, UserProfileWindow userProfileWindow)
+
+    public void GetTeamScore(object sender, ValueChangedEventArgs args)
     {
-        int teamScore = -1;
-        //Debug.Log("Getting Team Score");
-        string scoreValueName;
-
-        if (team == 0)
-        {
-            scoreValueName = "RubyRiderScore";
-        }
-        else
-        {
-            scoreValueName = "GoldenCircleScore";
-        }
-
-        databaseReference.Child(scoreValueName).GetValueAsync().ContinueWith(task =>
+        databaseReference.Child("teamscore").GetValueAsync().ContinueWith(task =>
         {
             if (task.IsFaulted)
             {
@@ -335,15 +303,14 @@ public class FirebaseManager
             }
             else if (task.IsCompleted)
             {
-                DataSnapshot score = task.Result;
-                teamScore = System.Convert.ToInt32(score.Value);
-                userProfileWindow.UpdateTeamScores(team, teamScore);
+                string json = task.Result.GetRawJsonValue();
+                Debug.Log(json);
+                CurrentTeamScore.instance = JsonUtility.FromJson<TeamScore>(json);
                 Debug.Log("Done");
+                UI.dirty = true;
                 return;
             }
         });
-
-        return teamScore;
     }
 
     public void GetAllUsers()

@@ -9,9 +9,9 @@ public class User
     public string userID;
     public int team;
     public int gold;
+    public int userScore;
     public int[] items;
     public int card;
-    public bool dirtyFlag; //Was there a change?
 
     public User()
     {

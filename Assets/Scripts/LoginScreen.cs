@@ -101,9 +101,8 @@ public class LoginScreen : MonoBehaviour
                 }
                 else
                     GetUserData();
-                fbManager.SetTeamScore(CurrentUser.instance.team, 0);
-                fbManager.SetTeamScore(1, 0);
-                fbManager.GetAllUsers();
+
+                //fbManager.GetAllUsers();
             }
         }
     }

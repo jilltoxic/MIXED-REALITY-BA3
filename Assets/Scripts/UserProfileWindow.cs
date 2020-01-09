@@ -10,45 +10,33 @@ public class UserProfileWindow : MonoBehaviour
     public Text UserNameText, UserTeamText, UserGoldAmountText;
     public TMP_Text rubyScoreText, goldenScoreText;
     public Image TeamLogo;
-
+    
     void Start()
     {
-        SetValues();
+        UpdateUIValues();
     }
 
     private void Update()
     {
-        if (CurrentUser.instance.dirtyFlag)
-            SetValues();
+        if (UI.dirty)
+        {
+            UpdateUIValues();
+            UI.dirty = false;
+        }
     }
 
     // Update is called once per frame
-    void SetValues()
+    void UpdateUIValues()
     {
         UserNameText.text = CurrentUser.instance.username;
         UserTeamText.text = CurrentUser.instance.team == 0 ? "Ruby Riders" : "Witches";
         TeamLogo.color = CurrentUser.instance.team == 0 ? Color.red : Color.green;
         UserGoldAmountText.text = CurrentUser.instance.gold + " Gold";
 
-        FirebaseManager.Instance.GetTeamScore(0, this);
-        FirebaseManager.Instance.GetTeamScore(1, this);
+        rubyScoreText.text = CurrentTeamScore.instance.RubyRiderScore.ToString();
+        goldenScoreText.text = CurrentTeamScore.instance.GoldenCircleScore.ToString();
     }
 
-    public void UpdateTeamScores(int team, int score)
-    {
-        if (team == 0)
-        {
-            rubyScoreText.text = score.ToString();
-            rubyScoreText.gameObject.SetActive(false);
-            rubyScoreText.gameObject.SetActive(true);
-        }
-        else
-        {
-            goldenScoreText.text = score.ToString();
-            goldenScoreText.gameObject.SetActive(false);
-            goldenScoreText.gameObject.SetActive(true);
-        }
-    }
 
     public void GetGold()
     {
@@ -61,9 +49,28 @@ public class UserProfileWindow : MonoBehaviour
             FirebaseManager.Instance.UpdateUserValue(CurrentUser.instance, "Gold", (CurrentUser.instance.gold - 25).ToString());
     }
 
-    public void GetPoints()
+    //Adds 50 points tpo the selected team
+    public void GetPoints(int team)
     {
-     
+        if (team == 0)
+        {
+            CurrentTeamScore.instance.GoldenCircleScore -= 50;
+            CurrentTeamScore.instance.RubyRiderScore += 50;
+        }
+        else
+        {
+            CurrentTeamScore.instance.GoldenCircleScore += 50;
+            CurrentTeamScore.instance.RubyRiderScore -= 50;
+        }
+        FirebaseManager.Instance.SetTeamScore();
+    }
+
+    void SetPoints(int gc, int rr)
+    {
+        CurrentTeamScore.instance.GoldenCircleScore = gc;
+        CurrentTeamScore.instance.RubyRiderScore = rr;
+        FirebaseManager.Instance.SetTeamScore();
+
     }
 
     public void OnLogOutButton()
