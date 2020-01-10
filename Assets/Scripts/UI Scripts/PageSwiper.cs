@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
+using UnityEngine.SceneManagement;
 
 public class PageSwiper : MonoBehaviour, IDragHandler, IEndDragHandler
 {
@@ -12,17 +13,28 @@ public class PageSwiper : MonoBehaviour, IDragHandler, IEndDragHandler
     public int rightBorder= -1;
     private int swipeCount;
     public bool canSwipe;
+    public int currentPosition;
     // Start is called before the first frame update
     void Start()
     {
         panelLocation = transform.position;
         canSwipe = true;
+        swipeCount = currentPosition;
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+     if (swipeCount <= rightBorder && SceneManager.GetActiveScene().name != "UI-Scanner")
+        {
+            Debug.Log("supposed to load scanner");
+            SceneManager.LoadScene("UI-Scanner");
+        }
+     if( swipeCount> rightBorder && SceneManager.GetActiveScene().name != "UI")
+        {
+            Debug.Log("supposed to load UI");
+            SceneManager.LoadScene("UI");
+        }
     }
 
     public void OnDrag(PointerEventData data)
