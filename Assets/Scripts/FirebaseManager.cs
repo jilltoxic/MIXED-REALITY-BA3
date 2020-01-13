@@ -202,6 +202,8 @@ public class FirebaseManager
             else if (task.IsCompleted)
             {
                 Debug.Log("Done");
+                UI.dirty = true;
+
                 return;
             }
         });
@@ -222,6 +224,11 @@ public class FirebaseManager
             else if (task.IsCompleted)
             {
                 //DataSnapshot snapshot = task.Result;
+                if (task.Result.GetRawJsonValue() == null)
+                {
+                    Debug.LogError("ReadCurrentUser(User " + user.userID + ") is null.");
+                    return;
+                }
                 string json = task.Result.GetRawJsonValue();
                 Debug.Log(json);
                 CurrentUser.instance = JsonUtility.FromJson<User>(json);
@@ -234,7 +241,7 @@ public class FirebaseManager
 
     public void UpdateUserValue(User user, string key, string value)
     {        
-        databaseReference.Child("users").Child(user.userID).Child(key.ToLower()).SetValueAsync(value).ContinueWith(task =>
+        databaseReference.Child("users").Child(user.userID).Child(key).SetValueAsync(value).ContinueWith(task =>
         {
             if (task.IsFaulted)
             {
@@ -253,6 +260,9 @@ public class FirebaseManager
 
     // -------------------------------- SCRUB LORDS TRYIN REAL HARD -----------------------------------------
 
+        /// <summary>
+        /// Updates both team scores. Don't use this.
+        /// </summary>
     public void SetTeamScore() //no new score yet i have no idea what i am doing 
     {
         Debug.Log("Updating Team Score");
@@ -273,6 +283,37 @@ public class FirebaseManager
                 return;
             }
         });
+    }
+
+    public void SetOwnTeamScore(int valueToAdd)
+    {
+        string key = CurrentUser.instance.team == 0 ? "RubyRiderScore" : "GoldenCircleScore";
+
+        float valueToSet = CurrentUser.instance.team == 0 ? CurrentTeamScore.instance.RubyRiderScore + valueToAdd : CurrentTeamScore.instance.GoldenCircleScore + valueToAdd;
+        databaseReference.Child("teamscore").Child(key).SetValueAsync(valueToSet).ContinueWith(task =>
+        {
+            if (task.IsFaulted)
+            {
+                // Handle the error...
+                Debug.LogError(task.Exception);
+                return;
+            }
+            else if (task.IsCompleted)
+            {
+                Debug.Log("Done");
+                return;
+            }
+        });
+
+        /*databaseReference.Child("teamscore").Child(key).RunTransaction(mutableData => {
+            int? score = mutableData.Value as int?;
+
+            if (score == null) score = 0;
+            score += valueToAdd;
+
+            mutableData.Value = score;
+            return TransactionResult.Success(mutableData);            
+        });*/
     }
 
         //databaseReference.Child("GoldenCircleScore").SetValueAsync(50).ContinueWith(task =>

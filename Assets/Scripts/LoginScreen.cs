@@ -54,11 +54,12 @@ public class LoginScreen : MonoBehaviour
             displayNameField.text,
             fbManager.User.Email,
             fbManager.User.UserId);
-        CurrentUser.instance.team = teamA.isOn ? 0 : 1;
+        if (teamA.isOn) CurrentUser.instance.team = 0;
+        else CurrentUser.instance.team = 1;
         CurrentUser.instance.gold = 50;
+        CurrentUser.instance.UserScore = 100;
 
         fbManager.WriteNewUser(CurrentUser.instance);
-        SceneManager.LoadScene("UI");
     }
 
     void GetUserData()
@@ -69,16 +70,13 @@ public class LoginScreen : MonoBehaviour
             fbManager.User.UserId);
 
         fbManager.ReadCurrentUser(CurrentUser.instance);
-        SceneManager.LoadScene("UI");
     }
 
     public void OnLoginButton()
     {
         string mail = mailField.text;
         string password = passwordField.text;
-        fbManager.LoginUser(mail, password);
-
-       
+        fbManager.LoginUser(mail, password);       
     }
 
     public void AuthStateChanged(object sender, System.EventArgs eventArgs)
@@ -103,6 +101,7 @@ public class LoginScreen : MonoBehaviour
                     GetUserData();
 
                 //fbManager.GetAllUsers();
+                SceneManager.LoadScene("UI");
             }
         }
     }

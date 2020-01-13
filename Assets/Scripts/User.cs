@@ -9,9 +9,20 @@ public class User
     public string userID;
     public int team;
     public int gold;
-    public int userScore;
     public int[] items;
     public int card;
+    public int userScore;
+    public int UserScore
+    {
+        set
+        {
+            int dif = value - userScore;
+            userScore = value;
+            FirebaseManager.Instance.UpdateUserValue(CurrentUser.instance, "userScore", CurrentUser.instance.UserScore.ToString());
+            FirebaseManager.Instance.SetOwnTeamScore(dif);
+        }
+        get { return userScore; }
+    }
 
     public User()
     {
