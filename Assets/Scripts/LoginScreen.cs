@@ -58,7 +58,7 @@ public class LoginScreen : MonoBehaviour
         CurrentUser.instance.gold = 50;
 
         fbManager.WriteNewUser(CurrentUser.instance);
-        SceneManager.LoadScene("Main");
+        SceneManager.LoadScene("UI");
     }
 
     void GetUserData()
@@ -69,7 +69,7 @@ public class LoginScreen : MonoBehaviour
             fbManager.User.UserId);
 
         fbManager.ReadCurrentUser(CurrentUser.instance);
-        SceneManager.LoadScene("Main");
+        SceneManager.LoadScene("UI");
     }
 
     public void OnLoginButton()
