@@ -10,6 +10,8 @@ public class UserProfileWindow : MonoBehaviour
     public TMP_Text UserNameText, UserTeamText, UserGoldAmountText, userScoreText;
     public TMP_Text rubyScoreText, goldenScoreText;
     public Image TeamLogo;
+
+    public Slider teamScoreSlider;
     
     void Start()
     {
@@ -79,6 +81,12 @@ public class UserProfileWindow : MonoBehaviour
         FirebaseManager.Instance.LogoutUser();
         SceneManager.LoadScene("LoginScreen");
     }
+
+    public void ScoreSlider()
+    {
+        
+    }
+
 
     // ----------------------------------- DEBUG ---------------------------------
     public void OnLostGame()
