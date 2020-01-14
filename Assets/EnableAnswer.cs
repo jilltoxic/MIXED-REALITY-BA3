@@ -18,14 +18,16 @@ public class EnableAnswer : MonoBehaviour
         
     }
 
-    public void YesAnswer()
+    public void Answer()
     { if (IsOn == false)
-        PanelAnswer.SetActive(true);
-        IsOn = true;
-    }
-    public void NoAnswer()
-    { if (IsOn == true)
-        PanelAnswer.SetActive(false);
-        IsOn = false;
+        {
+            PanelAnswer.SetActive(true);
+            IsOn = true;
+        }
+      else if (IsOn == true)
+        {
+            PanelAnswer.SetActive(false);
+            IsOn = false;
+        }
     }
 }
