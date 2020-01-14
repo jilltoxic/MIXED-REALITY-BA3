@@ -36,8 +36,10 @@ public class UserProfileWindow : MonoBehaviour
         UserGoldAmountText.text = CurrentUser.instance.gold + " Gold";
         userScoreText.text = CurrentUser.instance.UserScore.ToString() + "PP";
 
-        //rubyScoreText.text = CurrentTeamScore.instance.RubyRiderScore.ToString();
-        //goldenScoreText.text = CurrentTeamScore.instance.GoldenCircleScore.ToString();
+        rubyScoreText.text = CurrentTeamScore.instance.RubyRiderScore.ToString();
+        goldenScoreText.text = CurrentTeamScore.instance.GoldenCircleScore.ToString();
+
+        teamScoreSlider.value = CalculateRelationOfScores();
     }
 
 
@@ -82,10 +84,16 @@ public class UserProfileWindow : MonoBehaviour
         SceneManager.LoadScene("LoginScreen");
     }
 
-    public void ScoreSlider()
+
+    float CalculateRelationOfScores()
     {
-        
+
+        return (float)CurrentTeamScore.instance.GoldenCircleScore /
+               (float)(CurrentTeamScore.instance.RubyRiderScore + CurrentTeamScore.instance.GoldenCircleScore);
+                
     }
+
+    
 
 
     // ----------------------------------- DEBUG ---------------------------------
