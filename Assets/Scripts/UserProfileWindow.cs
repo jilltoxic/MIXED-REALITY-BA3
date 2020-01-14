@@ -87,9 +87,15 @@ public class UserProfileWindow : MonoBehaviour
 
     float CalculateRelationOfScores()
     {
-
-        return (float)CurrentTeamScore.instance.GoldenCircleScore /
-               (float)(CurrentTeamScore.instance.RubyRiderScore + CurrentTeamScore.instance.GoldenCircleScore);
+        if (CurrentTeamScore.instance.RubyRiderScore + CurrentTeamScore.instance.GoldenCircleScore != 0)
+        {
+            return (float)CurrentTeamScore.instance.GoldenCircleScore /
+                   (float)(CurrentTeamScore.instance.RubyRiderScore + CurrentTeamScore.instance.GoldenCircleScore);
+        }
+        else
+        {
+            return 0.5f;
+        }
                 
     }
 
