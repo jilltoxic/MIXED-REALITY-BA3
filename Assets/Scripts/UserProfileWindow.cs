@@ -45,6 +45,7 @@ public class UserProfileWindow : MonoBehaviour
 
     public void GetGold()
     {
+        
         FirebaseManager.Instance.UpdateUserValue(CurrentUser.instance, "gold", (CurrentUser.instance.gold + 5).ToString());
     }
 
@@ -106,7 +107,9 @@ public class UserProfileWindow : MonoBehaviour
     public void OnLostGame()
     {
         //Important: Capital U in UserScore <-- Change Property, not variable
-        CurrentUser.instance.UserScore -= 20;
+        if (CurrentUser.instance.UserScore >= 20)
+            CurrentUser.instance.UserScore -= 20;
+        else CurrentUser.instance.UserScore = 0;
     }
 
     public void OnWonGame()
