@@ -9,7 +9,7 @@ public class User
     public string userID;
     public int team;
     public int gold;
-    public int[] items;
+    public List<string> inventory;
     public int card;
     public int userScore;
     public int UserScore
@@ -26,6 +26,7 @@ public class User
 
     public User()
     {
+       inventory = new List<string>();
     }
 
     public User(string username, string email, string userID)
@@ -33,7 +34,9 @@ public class User
         this.username = username;
         this.email = email;
         this.userID = userID;
+        inventory = new List<string>();
     }
+
 
     public User(string username, string email, string userID, int gold)
     {
@@ -41,6 +44,7 @@ public class User
         this.email = email;
         this.userID = userID;
         this.gold = gold;
+        inventory = new List<string>();
     }
 }
 

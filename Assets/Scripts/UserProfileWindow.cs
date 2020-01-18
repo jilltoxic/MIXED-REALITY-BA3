@@ -100,6 +100,11 @@ public class UserProfileWindow : MonoBehaviour
                 
     }
 
+    public void BuyItem(int price)
+    {
+        
+    }
+
     
 
 

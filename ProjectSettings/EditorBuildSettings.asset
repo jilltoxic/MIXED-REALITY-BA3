@@ -17,6 +17,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/UI-Scanner.unity
     guid: 10a8699e36f47d2489ccda7a3d49cb80
+  - enabled: 1
+    path: Assets/Scenes/Item Shop.unity
+    guid: af39ba394b026c745b6aedf92f04ad32
   m_configObjects:
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: a4d3ab72e93fe6747a2ffdd9e3571a81,
       type: 2}
