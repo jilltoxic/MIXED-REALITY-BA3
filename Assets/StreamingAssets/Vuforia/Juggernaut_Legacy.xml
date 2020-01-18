@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <QCARConfig xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="qcar_config.xsd">
   <Tracking>
-    <ImageTarget name="Power_up" size="5.000000 3.744726" />
-    <ImageTarget name="crown_export" size="5.000000 5.477689" />
-    <ImageTarget name="test_target" size="5.000000 2.805907" />
+    <ImageTarget name="icon_shop" size="5.000000 3.535578" />
+    <ImageTarget name="icon_powerup" size="5.000000 3.535578" />
+    <ImageTarget name="icon_safezone" size="5.000000 3.535578" />
+    <ImageTarget name="icon_crown" size="5.000000 8.888889" />
   </Tracking>
 </QCARConfig>
