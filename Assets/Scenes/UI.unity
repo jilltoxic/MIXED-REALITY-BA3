@@ -474,10 +474,10 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: ' x money'
+  m_text: ' x MONEY'
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 0b371ecd0c8dbdc40af6793d033c3a43, type: 2}
-  m_sharedMaterial: {fileID: -8211340018160327305, guid: 0b371ecd0c8dbdc40af6793d033c3a43,
+  m_fontAsset: {fileID: 11400000, guid: 9d2eac90dd51af245a9243db2cfae1b8, type: 2}
+  m_sharedMaterial: {fileID: 3268506407137983433, guid: 9d2eac90dd51af245a9243db2cfae1b8,
     type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -2286,7 +2286,7 @@ GameObject:
   - component: {fileID: 187813587}
   - component: {fileID: 187813586}
   m_Layer: 5
-  m_Name: Text Manual
+  m_Name: Text Game Lost
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9308,7 +9308,7 @@ GameObject:
   - component: {fileID: 916648129}
   - component: {fileID: 916648132}
   m_Layer: 5
-  m_Name: ' Button ChangeScene'
+  m_Name: ' Button Manual'
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -16631,10 +16631,10 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Faction
+  m_text: FACTION
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 0b371ecd0c8dbdc40af6793d033c3a43, type: 2}
-  m_sharedMaterial: {fileID: -8211340018160327305, guid: 0b371ecd0c8dbdc40af6793d033c3a43,
+  m_fontAsset: {fileID: 11400000, guid: 9d2eac90dd51af245a9243db2cfae1b8, type: 2}
+  m_sharedMaterial: {fileID: 3268506407137983433, guid: 9d2eac90dd51af245a9243db2cfae1b8,
     type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -17085,10 +17085,10 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Name
+  m_text: NAME
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 0b371ecd0c8dbdc40af6793d033c3a43, type: 2}
-  m_sharedMaterial: {fileID: -8211340018160327305, guid: 0b371ecd0c8dbdc40af6793d033c3a43,
+  m_fontAsset: {fileID: 11400000, guid: 9d2eac90dd51af245a9243db2cfae1b8, type: 2}
+  m_sharedMaterial: {fileID: 3268506407137983433, guid: 9d2eac90dd51af245a9243db2cfae1b8,
     type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -17620,8 +17620,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: x PP
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 0b371ecd0c8dbdc40af6793d033c3a43, type: 2}
-  m_sharedMaterial: {fileID: -8211340018160327305, guid: 0b371ecd0c8dbdc40af6793d033c3a43,
+  m_fontAsset: {fileID: 11400000, guid: 9d2eac90dd51af245a9243db2cfae1b8, type: 2}
+  m_sharedMaterial: {fileID: 3268506407137983433, guid: 9d2eac90dd51af245a9243db2cfae1b8,
     type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -18102,7 +18102,7 @@ GameObject:
   - component: {fileID: 1710852282}
   - component: {fileID: 1710852281}
   m_Layer: 5
-  m_Name: Text Manual
+  m_Name: Text Game Won
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
