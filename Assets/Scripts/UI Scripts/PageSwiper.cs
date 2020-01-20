@@ -11,7 +11,7 @@ public class PageSwiper : MonoBehaviour, IDragHandler, IEndDragHandler
     public float easing = 0.5f;
     public int leftBorder= 2;
     public int rightBorder= -1;
-    private int swipeCount;
+    public int swipeCount;
     public bool canSwipe;
     public int currentPosition;
     // Start is called before the first frame update
