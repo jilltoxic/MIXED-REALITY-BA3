@@ -4324,10 +4324,10 @@ MonoBehaviour:
   UserTeamText: {fileID: 1589880442}
   UserGoldAmountText: {fileID: 21716628}
   userScoreText: {fileID: 1670570462}
-  rubyScoreText: {fileID: 0}
-  goldenScoreText: {fileID: 0}
+  rubyScoreText: {fileID: 1844327404}
+  goldenScoreText: {fileID: 1308069900}
   TeamLogo: {fileID: 0}
-  teamScoreSlider: {fileID: 0}
+  teamScoreSlider: {fileID: 536139193}
 --- !u!4 &406703599
 Transform:
   m_ObjectHideFlags: 0
