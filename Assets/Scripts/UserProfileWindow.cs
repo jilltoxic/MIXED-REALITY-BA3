@@ -33,8 +33,8 @@ public class UserProfileWindow : MonoBehaviour
         UserNameText.text = CurrentUser.instance.username;
         UserTeamText.text = CurrentUser.instance.team == 0 ? "Ruby Riders" : "Golden Circle";
         //TeamLogo.color = CurrentUser.instance.team == 0 ? Color.red : Color.green;
-        UserGoldAmountText.text = CurrentUser.instance.gold + " Gold";
-        userScoreText.text = CurrentUser.instance.UserScore.ToString() + "PP";
+        UserGoldAmountText.text = CurrentUser.instance.gold + " SHARDS";
+        userScoreText.text = CurrentUser.instance.UserScore.ToString() + "REPUTATION";
 
         rubyScoreText.text = CurrentTeamScore.instance.RubyRiderScore.ToString();
         goldenScoreText.text = CurrentTeamScore.instance.GoldenCircleScore.ToString();
