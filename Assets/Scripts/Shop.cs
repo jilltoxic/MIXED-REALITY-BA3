@@ -30,18 +30,5 @@ public class Shop : MonoBehaviour
             CurrentUser.instance.gold -= _item.itemPrice;
             FirebaseManager.Instance.WriteNewUser(CurrentUser.instance);
         }
-    }
-
-    public string InventoryList()
-    {
-        string listString = @"[""";
-        for(int i = 0;i < CurrentUser.instance.inventory.Count; i++)
-        {
-            listString += CurrentUser.instance.inventory[i];
-            if (i < CurrentUser.instance.inventory.Count - 1)
-                listString += @""",""";
-            else listString += @"""]";
-        }
-        return listString;
-    }
+    }    
 }

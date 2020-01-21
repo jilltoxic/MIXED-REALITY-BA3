@@ -5,6 +5,9 @@ using UnityEngine.SceneManagement;
 
 public class Scanner : MonoBehaviour
 {
+    CooldownScript cooldown;
+    List<Location> locations;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -14,6 +17,12 @@ public class Scanner : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        
+    }
+
+    public void OnScannedLocation()
+    {
+        FirebaseManager.Instance.UpdateUserValue(CurrentUser.instance, "gold", (CurrentUser.instance.gold + 5).ToString());
         
     }
 

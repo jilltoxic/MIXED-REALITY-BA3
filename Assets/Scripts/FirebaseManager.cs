@@ -187,6 +187,10 @@ public class FirebaseManager
 
     // -------------------------------- DATABASE -----------------------------------------
 
+        /// <summary>
+        /// Writes new or updates existing user
+        /// </summary>
+        /// <param name="user"></param>
     public void WriteNewUser(User user)
     {
         string json = JsonUtility.ToJson(user);

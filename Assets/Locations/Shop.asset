@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a5be3c386ed8e2044ac0b8b50e1509e4, type: 3}
   m_Name: Shop
   m_EditorClassIdentifier: 
+  locationID: 2
   locationName: Shop
   locationText: dont spend it all at once
   locationCooldown: 600

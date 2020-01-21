@@ -3,10 +3,12 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [CreateAssetMenu(menuName = "Location")]
-public class Locations : ScriptableObject
+public class Location : ScriptableObject
 {
+    public int locationID;
     public string locationName;
     public string locationText;
-    public float locationCooldown;
+    public double locationCooldown;
     public Sprite locationSprite;
+
 }

@@ -10,6 +10,8 @@ public class User
     public int team;
     public int gold;
     public List<string> inventory;
+    //public Dictionary<string, long> buffs;
+    public List<long> buffs;
     public int card;
     public int userScore;
     public int UserScore
@@ -24,9 +26,18 @@ public class User
         get { return userScore; }
     }
 
+    void InitLists()
+    {
+        inventory = new List<string>();
+        buffs = new List<long>();// new Dictionary<string, long>(); //<Location, System.DateTime>();
+        buffs.Add(new System.DateTime(1970,1,1).ToBinary());
+        buffs.Add(new System.DateTime(1970,1,1).ToBinary());
+        buffs.Add(new System.DateTime(1970,1,1).ToBinary());
+    }
+
     public User()
     {
-       inventory = new List<string>();
+        InitLists();
     }
 
     public User(string username, string email, string userID)
@@ -34,7 +45,7 @@ public class User
         this.username = username;
         this.email = email;
         this.userID = userID;
-        inventory = new List<string>();
+        InitLists();
     }
 
 
@@ -44,7 +55,34 @@ public class User
         this.email = email;
         this.userID = userID;
         this.gold = gold;
-        inventory = new List<string>();
+        InitLists();
+    }
+
+    /// <summary>
+    /// Call this whenever you scan a location
+    /// </summary>
+    /// <param name="location"></param>
+    public void SetLocationTimestamp(Location location)
+    {
+        Debug.LogWarning("Set Location Timestamp " + location.locationName + " " + System.DateTime.Now);
+        if (buffs[location.locationID] != 0)
+        {
+            if (System.DateTime.Now < System.DateTime.FromBinary(buffs[location.locationID]))
+            {
+                //Buff is still active. Don't update
+                //Maybe visual feedback?
+                return;
+            }
+            else
+            {
+                buffs[location.locationID] = System.DateTime.Now.AddSeconds(location.locationCooldown).ToBinary();
+            }
+        }
+        else
+        {
+            buffs[location.locationID] = System.DateTime.Now.AddSeconds(location.locationCooldown).ToBinary();
+        }
+        FirebaseManager.Instance.WriteNewUser(this);
     }
 }
 

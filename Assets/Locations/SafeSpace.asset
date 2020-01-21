@@ -10,9 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a5be3c386ed8e2044ac0b8b50e1509e4, type: 3}
-  m_Name: SaveSpace
+  m_Name: SafeSpace
   m_EditorClassIdentifier: 
-  locationName: Save Space
+  locationID: 1
+  locationName: Safe Space
   locationText: ur are save honey its ok
   locationCooldown: 3600
   locationSprite: {fileID: 0}
