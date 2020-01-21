@@ -1,0 +1,35 @@
+html {
+    background-image: url("UI_background.png");
+    background-repeat: repeat-y;
+    -webkit-font-smoothing: antialiased;
+}
+
+body {
+    font-family: "Helvetica Neue", sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: center;
+    padding-left: 250px;
+    padding-right: 250px;
+}
+
+h1 {
+    background-image: url("JuggernautLegacy.png");
+    margin: 0 auto;
+    max-width: 800px;
+    padding: 0em 2em 0em;
+}
+
+a {
+    color: #0083e8;
+}
+
+img {
+    display: block;
+    margin: 1.3em auto;
+    max-width: 95%;
+}
+
+footer {
+    margin: 0px;
+}
