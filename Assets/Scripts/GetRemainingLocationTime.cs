@@ -2,11 +2,12 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 public class GetRemainingLocationTime : MonoBehaviour
 {
     public Location location;
-    public Text textFieldRemainingTime; 
+    public TMP_Text textFieldRemainingTime; 
     System.TimeSpan duration;
     public GameObject childObject;
 

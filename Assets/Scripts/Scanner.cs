@@ -5,7 +5,6 @@ using UnityEngine.SceneManagement;
 
 public class Scanner : MonoBehaviour
 {
-    CooldownScript cooldown;
     List<Location> locations;
 
     // Start is called before the first frame update
