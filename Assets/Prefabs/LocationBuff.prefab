@@ -117,7 +117,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   location: {fileID: 11400000, guid: 22b7727c1071ee14a96f8d9691671026, type: 2}
-  textFieldRemainingTime: {fileID: 176376212653708031}
+  textFieldRemainingTime: {fileID: 0}
   childObject: {fileID: 176376212536353783}
 --- !u!114 &3129683540519562829
 MonoBehaviour:
@@ -132,7 +132,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   location: {fileID: 11400000, guid: 6c2ea824338cf6e49be93e1464c8f617, type: 2}
-  textFieldRemainingTime: {fileID: 7695789619733557100}
+  textFieldRemainingTime: {fileID: 0}
   childObject: {fileID: 8324889656980588402}
 --- !u!114 &1577379383646124622
 MonoBehaviour:
@@ -147,7 +147,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   location: {fileID: 11400000, guid: 1afdb4eef4a657a4c89a8cb1120c3254, type: 2}
-  textFieldRemainingTime: {fileID: 3858520204799954881}
+  textFieldRemainingTime: {fileID: 0}
   childObject: {fileID: 4874396980467911952}
 --- !u!1 &176376212536353783
 GameObject:
