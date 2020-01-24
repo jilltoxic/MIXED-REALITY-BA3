@@ -19,12 +19,12 @@ public class ahh : MonoBehaviour
     }
 
     public void Do(){
-        SceneManager.LoadScene("Item Shop");
+        SceneManager.LoadScene("Shop Scene");
     }
 
     public void Update()
     {
         duration = System.DateTime.FromBinary(CurrentUser.instance.buffs[locationID]) - System.DateTime.Now;
-        btn.interactable = duration.TotalSeconds > 0;
+        //btn.interactable = duration.TotalSeconds > 0;
     }
 }

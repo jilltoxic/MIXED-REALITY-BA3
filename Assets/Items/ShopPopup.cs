@@ -13,10 +13,16 @@ public class ShopPopup : MonoBehaviour
     private TMP_Text itemText;
 
     [SerializeField]
+
+    private TMP_Text itemGame;
+
+    [SerializeField]
     private TMP_Text itemPrice;
 
     [SerializeField]
     private Image itemImage;
+
+
 
     [SerializeField]
     private GameObject panel;
@@ -30,6 +36,7 @@ public class ShopPopup : MonoBehaviour
         itemText.text = item.itemText;
         itemPrice.text = item.itemPrice.ToString();
         itemImage.sprite = item.itemSprite;
+        itemGame.text = item.itemGame;
         panel.SetActive(true);
         
     }
