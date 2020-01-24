@@ -8,6 +8,7 @@ using TMPro;
 public class UserProfileWindow : MonoBehaviour
 {
     public TMP_Text UserNameText, UserTeamText, UserGoldAmountText, userScoreText;
+    public TMP_Text anotherUserGoldAmountText;
     public TMP_Text rubyScoreText, goldenScoreText;
     public Image TeamLogo;
 
@@ -34,7 +35,9 @@ public class UserProfileWindow : MonoBehaviour
         UserTeamText.text = CurrentUser.instance.team == 0 ? "Ruby Riders" : "Golden Circle";
         //TeamLogo.color = CurrentUser.instance.team == 0 ? Color.red : Color.green;
         UserGoldAmountText.text = CurrentUser.instance.gold + " SHARDS";
-        userScoreText.text = CurrentUser.instance.UserScore.ToString() + "REPUTATION";
+        anotherUserGoldAmountText.text = CurrentUser.instance.gold + " SHARDS";
+
+        userScoreText.text = CurrentUser.instance.UserScore.ToString() + " REPUTATION";
 
         rubyScoreText.text = CurrentTeamScore.instance.RubyRiderScore.ToString();
         goldenScoreText.text = CurrentTeamScore.instance.GoldenCircleScore.ToString();
