@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 public class Shop : MonoBehaviour
 {
@@ -43,5 +44,10 @@ public class Shop : MonoBehaviour
     public void UpdateShopUI()
     {
         userGoldAmountText.text = CurrentUser.instance.gold.ToString() + " BOLDS";
+    }
+
+    public void ExitButton()
+    {
+        SceneManager.LoadScene("UI");
     }
 }

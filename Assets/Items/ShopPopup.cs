@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 public class ShopPopup : MonoBehaviour
 {
@@ -41,12 +42,16 @@ public class ShopPopup : MonoBehaviour
         
     }
 
-    void Start()
+    public void PurchaseButton()
     {
-        
+        FindObjectOfType<Shop>().BuyItem(item);
     }
 
-    // Update is called once per frame
+    public void ExitButton()
+    {
+        SceneManager.LoadScene("UI");
+    }
+
     void Update()
     {
         
