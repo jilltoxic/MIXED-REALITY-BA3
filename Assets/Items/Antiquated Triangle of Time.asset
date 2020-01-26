@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 17e24ed9d9f148d439c9112aec2f56b1, type: 3}
-  m_Name: pupu
+  m_Name: Antiquated Triangle of Time
   m_EditorClassIdentifier: 
-  itemName: pupu
-  itemText: asdf
-  itemPrice: 20
-  itemGame: best game ever
+  itemName: Antiquated Triangle of Time
+  itemText: Replay the recent round
+  itemPrice: 10
+  itemGame: Cloak-Bullet-Lasercutter
   itemSprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
