@@ -16,4 +16,4 @@ MonoBehaviour:
   itemText: Change winning points to either 1 or 5 (instead of 3)
   itemPrice: 20
   itemGame: Cloak-Bullet-Lasercutter
-  itemSprite: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
+  itemSprite: {fileID: 21300000, guid: f183872099caacb43a836f5d14d4b4bb, type: 3}
