@@ -47,11 +47,7 @@ public class ShopPopup : MonoBehaviour
         FindObjectOfType<Shop>().BuyItem(item);
     }
 
-    public void ExitButton()
-    {
-        SceneManager.LoadScene("UI");
-    }
-
+   
     void Update()
     {
         
