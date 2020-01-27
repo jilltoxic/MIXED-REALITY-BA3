@@ -16,4 +16,4 @@ MonoBehaviour:
   itemText: Replay the recent round
   itemPrice: 10
   itemGame: Cloak-Bullet-Lasercutter
-  itemSprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
+  itemSprite: {fileID: 21300000, guid: 5ea0548123275d84ea3cfb5ade1f24eb, type: 3}
