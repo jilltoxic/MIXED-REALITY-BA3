@@ -1707,8 +1707,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9732e0f92c3571743bb92246f9a9666a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  RubyRiderManual: {fileID: 332342271}
-  GoldenCircleManual: {fileID: 679106177}
+  RubyRiderManual: {fileID: 0}
+  GoldenCircleManual: {fileID: 0}
 --- !u!1 &58204223
 GameObject:
   m_ObjectHideFlags: 0
@@ -9240,12 +9240,12 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 800333617}
-  m_RootOrder: 9
+  m_Father: {fileID: 1213096109}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -408, y: -306.9}
+  m_AnchoredPosition: {x: -49.99997, y: -49.99997}
   m_SizeDelta: {x: 241.7, y: 241.7}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &295191587
@@ -10942,8 +10942,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9732e0f92c3571743bb92246f9a9666a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  RubyRiderManual: {fileID: 332342271}
-  GoldenCircleManual: {fileID: 679106177}
+  RubyRiderManual: {fileID: 0}
+  GoldenCircleManual: {fileID: 0}
 --- !u!1 &354993677
 GameObject:
   m_ObjectHideFlags: 0
@@ -24655,8 +24655,7 @@ RectTransform:
   - {fileID: 1637650953}
   - {fileID: 1589880441}
   - {fileID: 239821899}
-  - {fileID: 2014743593}
-  - {fileID: 295191586}
+  - {fileID: 1213096109}
   m_Father: {fileID: 69219769}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -35171,6 +35170,58 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1212705423}
   m_CullTransparentMesh: 0
+--- !u!1 &1213096108
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1213096109}
+  - component: {fileID: 1213096110}
+  m_Layer: 5
+  m_Name: Team_Logos
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1213096109
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1213096108}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 2014743593}
+  - {fileID: 295191586}
+  m_Father: {fileID: 800333617}
+  m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -3.8499987, y: 496.0013}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1213096110
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1213096108}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 030f87b4b2ed916489f8f1d84a47046e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  RubyRiderLogo: {fileID: 295191585}
+  GoldenCircleLogo: {fileID: 2014743592}
 --- !u!1 &1214198047
 GameObject:
   m_ObjectHideFlags: 0
@@ -59924,7 +59975,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &2014743593
 RectTransform:
   m_ObjectHideFlags: 0
@@ -59936,12 +59987,12 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 800333617}
-  m_RootOrder: 8
+  m_Father: {fileID: 1213096109}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -408, y: -306.9}
+  m_AnchoredPosition: {x: -49.99997, y: -49.99997}
   m_SizeDelta: {x: 241.7, y: 241.7}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2014743594

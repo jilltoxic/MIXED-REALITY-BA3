@@ -43,6 +43,7 @@ public class UserProfileWindow : MonoBehaviour
         goldenScoreText.text = CurrentTeamScore.instance.GoldenCircleScore.ToString();
 
         teamScoreSlider.value = CalculateRelationOfScores();
+        FindObjectOfType<LogoScript>().UpdateLogos();
     }
 
 
