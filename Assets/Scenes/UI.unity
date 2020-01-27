@@ -10402,6 +10402,7 @@ GameObject:
   - component: {fileID: 328441098}
   - component: {fileID: 328441100}
   - component: {fileID: 328441099}
+  - component: {fileID: 328441101}
   m_Layer: 5
   m_Name: Panel Items
   m_TagString: Untagged
@@ -10466,6 +10467,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 328441097}
   m_CullTransparentMesh: 0
+--- !u!114 &328441101
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 328441097}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e5f22681678e9e4fadd3567bfea89fa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemManager: {fileID: 11400000, guid: 2881ad6ce2c0e7140ae8aad3bbddb47c, type: 2}
+  itemPrefab: {fileID: 3244307477820231148}
+  itemPanel: {fileID: 1015960895}
 --- !u!1 &329794120
 GameObject:
   m_ObjectHideFlags: 0
@@ -10643,7 +10659,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &332342272
 RectTransform:
   m_ObjectHideFlags: 0
@@ -10835,6 +10851,7 @@ GameObject:
   - component: {fileID: 336917224}
   - component: {fileID: 336917223}
   - component: {fileID: 336917225}
+  - component: {fileID: 336917226}
   m_Layer: 5
   m_Name: Pannel Manual
   m_TagString: Untagged
@@ -10913,6 +10930,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c16921b1041bb9f45a8d6c77a84c695b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &336917226
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 336917221}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9732e0f92c3571743bb92246f9a9666a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  RubyRiderManual: {fileID: 332342271}
+  GoldenCircleManual: {fileID: 679106177}
 --- !u!1 &354993677
 GameObject:
   m_ObjectHideFlags: 0
@@ -64968,6 +64999,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 84a0b83deaae368499fa624a68d8ab1a, type: 3}
+--- !u!1 &3244307477820231148 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3244307477439386738, guid: 84a0b83deaae368499fa624a68d8ab1a,
+    type: 3}
+  m_PrefabInstance: {fileID: 3244307477820231147}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &3263653090013489231
 PrefabInstance:
   m_ObjectHideFlags: 0

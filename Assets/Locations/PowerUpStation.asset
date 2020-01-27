@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a5be3c386ed8e2044ac0b8b50e1509e4, type: 3}
   m_Name: PowerUpStation
   m_EditorClassIdentifier: 
+  locationID: 0
   locationName: Power Up Station
   locationText: blablablabla
   locationCooldown: 10800
