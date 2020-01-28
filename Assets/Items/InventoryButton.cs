@@ -31,12 +31,12 @@ public class InventoryButton : MonoBehaviour
         //itemGame.text = item.itemGame;
         itemText.text = item.itemText.ToString();
 
-        //GetComponent<Button>().onClick.AddListener(() => OnClick());
+        GetComponentInChildren<Button>().onClick.AddListener(() => OnClick());
     }
 
     public void OnClick()
     {
-        //FindObjectOfType<ShopPopup>().SetUp(item);
+        FindObjectOfType<InventoryPopup>().SetUp(item);
     }
 
 }
