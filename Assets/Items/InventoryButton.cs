@@ -37,6 +37,7 @@ public class InventoryButton : MonoBehaviour
     public void OnClick()
     {
         FindObjectOfType<InventoryPopup>().SetUp(item);
+        FindObjectOfType<PageSwiper>().canSwipe = false;
     }
 
 }
