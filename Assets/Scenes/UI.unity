@@ -1707,8 +1707,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9732e0f92c3571743bb92246f9a9666a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  RubyRiderManual: {fileID: 0}
-  GoldenCircleManual: {fileID: 0}
+  RubyRiderManual: {fileID: 332342271}
+  GoldenCircleManual: {fileID: 679106177}
 --- !u!1 &58204223
 GameObject:
   m_ObjectHideFlags: 0
