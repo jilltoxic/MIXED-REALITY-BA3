@@ -2895,11 +2895,11 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Well all y\u2019all might should better be! If your reputation drops you
-    might not be able to walk the streets ever again out of shame! Y\u2019all can
-    always give yous reputation a boost by winning a fight against one of them Witches,
-    or by owning some Shards. But if you lose one of them things you\u2019ll also
-    lose some of your Reputation.\r"
+  m_text: "Well, all y\u2019all might should better be! If your reputation drops
+    you might not be able to walk the streets ever again out of shame! Y\u2019all
+    can always give yous reputation a boost by winning a fight against one of them
+    Witches, or by owning some Shards. But if you lose one of them things you\u2019ll
+    also lose some of your Reputation."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -7767,12 +7767,12 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Oh why of course lad, sit down. There are many stories folks tell about
-    the Juggernaut but only few speak the truth. What we know so far is that it is
-    an antique relict of the old ones. Possibly a statue for their holiest of gods.
-    We additionally gathered the information that it has a cat like shape and one
-    of its arms moves fore and backwards. The stories say that it does so on its
-    own accord. But its whereabouts remain a mystery.\r"
+  m_text: Oh! Why of course lad, sit down. There are many stories folks tell about
+    the Juggernaut but only a few speak the truth. What we know so far is that it
+    is an antique relict of the old ones. Possibly a statue for their holiest of
+    gods. We additionally gathered the information that it has a cat-like shape and
+    one of its arms moves fore- and backwards. The stories say that it does so on
+    its own accord. But its whereabouts remain a mystery.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -8508,10 +8508,10 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Yeah she isn\u2019t like any other haberdashery around here. If you ever
+  m_text: "Yeah, she isn\u2019t like any other haberdashery around here. If you ever
     find something in the ruins worth selling you might should sell it there. And
     if you\u2019re fixin\u2019 to get something for your next fight you might should
-    find it there.\r"
+    find it there."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -9953,11 +9953,11 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Goodness gracious kid. What are they not. The people from the Big Council
+  m_text: "Goodness gracious, kid. What are they not? The people from the Big Council
     own this place. Lem-me tell you one thing about \u2018em. They all know how to
     throw a big party but they will also throw you out if you don\u2019t play by
     their rules. But no need to feel like a cat on a hot-tin roof. They have to catch
-    ya first.\r"
+    ya first."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -11196,11 +11196,11 @@ MonoBehaviour:
       m_Calls: []
   m_text: The Golden Circle is the oldest and biggest coven in the Lab, possibly
     in the whole world. Our history is deeply interwoven with the social structure
-    of The Lav. In its beginnings it was us who wanted to achieve order and regulation
-    and perceive and archive knowledge over the old people and the way they live.
-    To prevent us from making the same mistakes over and over again. Additionally
-    we try to find ways to modernize antique witching techniques to be one with the
-    past present and future of magic.
+    of The Lab. In its beginnings it was us, the Golden Circle, who wanted to achieve
+    order and regulation and perceive and archive knowledge about the old people
+    and the way they lived. To prevent us from making the same mistakes over and
+    over again. Additionally, we try to find ways to modernize antique witching techniques
+    to be one with the past, present, and future of magic.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -11830,7 +11830,7 @@ MonoBehaviour:
     all y\u2019all are so eager to pitch a fit in the streets I\u2019m gonna say
     it once and for all. There is no fighting in these halls. Or the Big Council
     will take care of all y\u2019all. But if you respect that rule it really is a
-    great place to be.\r"
+    great place to be."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -12359,8 +12359,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_text: "If any of y\u2018all ever wanna ruffle some feathers in the local gossip
-    just go over to the next powerstation to Jenkins. The AI there may might give
-    you some information that might could help y\u2018all in your next fight.\r"
+    just go over to the next power station to Jenkins. The AI there may might give
+    you some information that might could help y\u2018all in your next fight."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -13190,13 +13190,13 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Yeah I reckon you heard of them already. Now, they are a bunch of no-good-doers
+  m_text: "Yeah, I reckon you heard of them already. Now, they are a bunch of no-good-doers
     but really, it\u2019s really not their fault. They just don\u2019t know any better.
     Weren't raised right, the lot of them. Spend their whole lives away in their
     libraries and laboratories. Searching for riddles to answer and whatnot. Can\u2019t
     say I\u2019ve never none seen any of them folks have fun. But they have bright
-    minds in their ranks, like their taky camp counselor Alys Tear; This may might
-    make them the perfect rivals in our race, love.\r"
+    minds in their ranks, like their taky camp counselor Alys Tear; this may might
+    make them the perfect rivals in our race, love."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -15486,9 +15486,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "What is there to ask about Bolts. You either have them or you sell some
+  m_text: What is there to ask about Bolts? You either have them or you sell some
     Shards to have them and buy some luxury items or upgrades. That's how it works
-    in The Lab.\r"
+    in The Lab.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -17017,12 +17017,12 @@ MonoBehaviour:
       m_Calls: []
   m_text: "What do y\u2018all wanna know about little ol\u2018 me? Wanna hear about
     the time I build up the city? Or lem-me tell you about that time when I fought
-    of that plague fella from the streets! Or when I founded the Ruby Riders! Oh
-    wait, what now? You wanna hear about what? Oh bless your heart y\u2018all wanna
+    of that plague fella from the streets! Or when I founded the Ruby Riders! Oh,
+    wait, what now? You wanna hear about what? Oh, bless your heart y\u2018all wanna
     hear something about my name? The hustle, well it\u2018s one of them dances from
     the old ones. Requires a hell of a lot of hipwork if y\u2018all get my drift.
     And dangerous it is too. That\u2019s why I have this sweet PP 4005 instead of
-    a hip!\r"
+    a hip!"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -23502,10 +23502,11 @@ MonoBehaviour:
   m_text: "There is not much about me to say. When I came to the Lab it was nothing
     more than a pile of dirt and a handful of scruffy fellow travelers. We started
     to build around the leftovers of the Old Ones. Soon many people heard about our
-    gathering and joined us. To fast to recognize the Lab grew and grew to an excessive
-    amount and the people couldn\u2019t be controlled anymore. The Big Council was
-    founded and people split up into the Ruby Riders and, of yourself the Golden
-    Circle. \r"
+    gathering and joined us. And just as fast as the full moon rises on the cloudless
+    night sky the Lab grew and grew to an excessive amount and the people couldn\u2019t
+    be controlled anymore. I founded the Golden Circle whereas Mrs. Yates established
+    her gang, the Ruby Riders. And of course the Big Council was set up in the City
+    Hall."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -24454,13 +24455,13 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Oh. yes. Them. Of course. Well the Ruby Riders are the biggest gang that
+  m_text: Oh. Yes. Them. Of course. Well, the Ruby Riders are the biggest gang that
     you will find in The Lab. They are a bunch of babbling, bumbling baboons! They
     leave a trail of chaos and disruption behind and you will be able to hear them
     from miles away! They use rusty self-manufactured stuff and have the audacity
-    to call them 'weapons', that more often than not fall apart before they fire
-    it once. But even a blind dog sometimes finds a bone. They are known to be particularly
-    good Shard finders. \r"
+    to call them 'weapons', who, more often than not, fall apart before they can
+    fire it once. But even a blind dog sometimes finds a bone. They are known to
+    be particularly good Shard finders.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -24615,9 +24616,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Besides them being an easy answer to your financial situations Shards
+  m_text: Besides them being the easy answer to your financial situations Shards
     help us to reach our goal in finding the Juggernaut. Maybe some special Shards
-    give us further information to its current location.\r"
+    give us further information about its current location.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -28359,11 +28360,15 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "They are the force regulating the Lab. They make the rules and if you
-    ever dare to step too far out of line they will, and let's be very frank about
+  m_text: 'They are the force regulating the Lab. They make the rules and if you
+    ever dare to step too far out of line they will, and let''s be very frank about
     this, put you on restraints. Or worse shun you out of the city and out of the
-    coven!\r\nMy, my no need to look so scared lass, you have to make many mistakes
-    for that to happen. And of yourself you have got to be caught in the act!\r"
+    coven!
+
+    My, my no need to look so scared lass, you have to make many mistakes
+    for that to happen. And of course, you have got to be caught in the act!
+
+'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -30831,10 +30836,10 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "To survive in a city like the Lab it is important to have an eye on your
+  m_text: To survive in a city like the Lab it is important to have an eye on your
     reputation. If it sinks to a certain level you could become an easier target
     to others. And please have in mind that even as an individual you have to represent
-    the respect, and order we value in our coven. \r"
+    the respect, and order we value in our coven.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -32619,14 +32624,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Welcome child, to the Golden Circle!
-
-
-    You must have hundreds of questions
+  m_text: "Welcome child, to the Golden Circle! \n\nYou must have hundreds of questions
     dancing on the tip of your tongue. Be gentle and kind and ask them one by one
-    and I may answer them the best I can do.
-
-'
+    and I may answer them the best I can.\r\n"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: d547d888d4d6ce446a5ae9f8359ad6df, type: 2}
   m_sharedMaterial: {fileID: -1059995369620268744, guid: d547d888d4d6ce446a5ae9f8359ad6df,
@@ -35821,10 +35821,10 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: " If you ever feel a little less energetic than your usual self it maybe
-    time for you to go to one of the Power Stations that are scattered all over town.
-    They will power-up and polish you and sometimes you can catch a little gossip
-    about the Ruby Riders and what they are up to\u2026\r"
+  m_text: "If you ever feel a little less energetic than your usual self, it may
+    be time for you to go to one of the Power Stations that are scattered all over
+    town. They will power-up and polish you and sometimes you can catch a little
+    gossip about the Ruby Riders and what they are up to\u2026"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -37163,9 +37163,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "When you find Shards that we cannot use for our research you best sell
-    it in The Arcade. Its owner always gives us a good price and even has some objects
-    that could help you in your next fight with a Ruby Rose member.\r"
+  m_text: When you find Shards that we cannot use for our research you best sell
+    it in The Arcade. Its owner always gives us a good price and even has some Shards
+    that could help you in your next fight with a Ruby Rose member.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -39039,14 +39039,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Welcome child, to the Ruby Riders!
-
-
-    You must have hundreds of questions
-    dancing on the tip of your tongue. Be gentle and kind and ask them one by one
-    and I may answer them the best I can do.
-
-'
+  m_text: "Howdy stranger, you must be new here! \n\nYa probably have tons of questions
+    for me. Bless your lil\u2019 heart, but don\u2019t put the cart before the horse!
+    Where shall we start, what do you wanna know?"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: d547d888d4d6ce446a5ae9f8359ad6df, type: 2}
   m_sharedMaterial: {fileID: -1059995369620268744, guid: d547d888d4d6ce446a5ae9f8359ad6df,
@@ -42724,10 +42719,10 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_text: "See this? This is a fx-991ES spring. Runs a little smoother than its successor
-    but still it sometimes is a little tacky. So whenever this thing is pitchin me
-    a fit I run up to a powerstation and get a little power me up and be back on
-    the road in no time. And the AI is particularly chatty. You should check them
-    out. They are all over town. You can't miss \u2018em.\r"
+    but still, it sometimes is a little tacky. So whenever this thing is pitchin'
+    me a fit I run-up to a power station and get a little power me up and be back
+    on the road in no time. And the AI is particularly chatty. You should check them
+    out. They are all over town. You can't miss \u2018em."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -43104,12 +43099,13 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Of course young\u2019uns. So the juggernaut is this relic, located somewhere
-    in the ruins, that I am sure of. And, you see, it is one of those cat statues,
-    them golden ones all y\u2019all know of. Anyhow it\u2019s proper special \u2018cause
-    there is no power source to keep it going. Now, this is where it starts to get
-    interesting. I reckon y\u2019all are thinking the same as me. Find the Juggernaut
-    find endless energy! I wish I knew how the damned thing works."
+  m_text: "Of course young\u2019uns. So the Juggernaut is this relic, a Shard if
+    you wish, located somewhere in the ruins, that I am sure of. And, you see, it
+    is one of those cat statues, them golden ones all y\u2019all know of. Anyhow
+    it\u2019s proper special \u2018cause there is no power source to keep it going.
+    Now, this is where it starts to get interesting. I reckon y\u2019all are thinking
+    the same as me. Find the Juggernaut find endless energy! I wish I knew how the
+    damned thing works."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -43337,11 +43333,12 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Oh jeez, That one right there has always been a little different. But
-    nevertheless if y\u2018all ever have something to sell or need something for
-    your next brawl you may might find the right thing in his haberdashery. Now,
-    you gonna have to be quick about your shopping `cause he throws you out after
-    ten minutes. I reckon y\u2018all just step in and grab what ya can.\r\n"
+  m_text: "Oh jeez, that one right there has always been a little different. But
+    nevertheless, if y\u2018all ever have something to sell or need something for
+    your next brawl you may might find the right thing in their haberdashery. Now,
+    you gonna have to be quick about your shopping `cause they throw y\u2019all out
+    after \u2018bout ten minutes. I reckon y\u2018all just step in and grab what
+    ya can."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -44955,9 +44952,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "You certainly must mean good old Jenkins. Yes, they are the ever so faithful
+  m_text: You certainly must mean good old Jenkins. Yes, they are the ever so faithful
     AI operating the Power Stations, and they just love to gossip. Sometimes you
-    can catch up something good and have an advantage in your next fight.\r"
+    can catch up something good and have an advantage in your next fight.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -46801,7 +46798,7 @@ MonoBehaviour:
     forbid any kind of fighting in between those walls. It\u2019s a place of power
     and knowledge, where you will find the biggest archive this city has to offer.
     And it\u2018s the place where the Big Council operates from. Sometimes they announce
-    certain events or hunts on the big board.\r"
+    certain events or hunts on the big board."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -49105,12 +49102,12 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Alys! Yeah how he doin\u2019 anyway? I heard that one of his experiments
+  m_text: "Alys! Yeah, how he doin\u2019 anyway? I heard that one of his experiments
     exploded on him and he now smells like burnt pancakes. He is one strange fella,
     always has been. He was here before all y\u2019all, before me even and was searching
     the place for answers to his mindless riddles. Got me all tacky with his questions
     all the time. Now, that was until he decided to gather all them witches and build
-    up that coven.\r"
+    up that coven."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -49949,9 +49946,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Now this is a silly question, darling. Not only can you sell them but
+  m_text: Now, this is a silly question, darling. Not only can you sell them but
     they might could get us some information about the Juggernauts position. To find
-    it first.\r"
+    it first.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -50749,8 +50746,8 @@ MonoBehaviour:
     know where to start but lem-me tell you this. I arrived in this city coming from
     over yonder. Back then when it was nothing but ruins and rubble from the old
     people. Then me and some fellas started building a bunch of new stuff and before
-    we knew millions of people come pilgering in our city and start building. Before
-    we know it it became what it is today.\r \r"
+    we knew, millions of people came pilgrimaging in our city and started building.
+    Before we knew it, it became what it is today."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -50905,8 +50902,11 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Ah yes the Lab. Our beautiful city. It was founded on the ruins of the
-    old people after the global warming disaster.  \r"
+  m_text: "Ah yes, the Lab. Our beautiful city. It was founded on the ruins of the
+    old people after the global warming disaster. If you walk it\u2019s streets carefully
+    you might find valuable objects, though you should be careful, love, since the
+    Ruby Riders are on and about on the streets. \nThey are, just like us, on the
+    search of the Juggernaut and will do anything to get to it."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -56999,8 +56999,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "The more of it the better! If you ever have some spare change check out
-    the Arcade. There is nothing sweeter than exchanging Bolts for some sweet goods.\r"
+  m_text: The more of it the better! If you ever have some spare change check out
+    the Arcade. There is nothing sweeter than exchanging Bolts for some sweet goods.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -57155,13 +57155,13 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Oh he is a jolly good fella, isn\u2018t he? Might come over as a little
-    eerie, but you don\u2018t have to worry about him. If you have something to sell
-    or looking for something that might help you in your next brawl go to his shop
-    and take a look. Though I should tell you that you should look out for his temper.
-    For any reason he kicks every customer out after ten minutes of browsing. I asked
-    him multiple times why he did that, each time getting a different answer. A true
-    enigma he is.\r"
+  m_text: "Oh they are a jolly good fella, aren\u2019t they? Might come over as a
+    little eerie, but you don\u2018t have to worry about them. If you have something
+    to sell or looking for something that might help you with your next brawl go
+    to their shop and take a look. Though I should tell you that you should look
+    out for their temper. For any reason, they kick every customer out after ten
+    minutes of browsing. I asked them multiple times why they did that, each time
+    getting a different answer. A true enigma they are."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -59464,13 +59464,13 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Well what is there left to say? We are the biggest gang in this city and
-    fixin to find the Juggernaut of course. Cant have them witches find it first.
-    We would never hear the end of it. Now in all honesty, darling, if you ever have
-    problems just turn to another Ruby Rider. You will find that those troubles will
-    soon be gone. We are a family and cover each others backs. And just like my old
-    Paw-Paw used to say: \u2018Don't spoil Saturday night by counting the time to
-    Monday morning\u2019.\r"
+  m_text: "Well, what is there left to say? We are the biggest gang in this city
+    and fixin' to find the Juggernaut of course. Can't have them witches find it
+    first. We would never hear the end of it. Now, in all honesty, darling, if you
+    ever have problems just turn to another Ruby Rider. You will find that those
+    troubles will soon be gone. We are a family and cover each other's backs. And
+    just like my old Paw-Paw used to say: \u2018Don't spoil Saturday night by counting
+    the time to Monday morning\u2019."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -60521,11 +60521,12 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Oh that old bugger. Yes, yes of course Sammy and her pack of howling monkeys.
-    She has been in this city for just as long as I have been there. And you could
-    say that in the beginning we worked well together. Preserving and organizing
-    the city to our likings but is quickly fell apart. We are just too different.
-    She\u2019s loud and wants to dance all the time. Always acting before thinking.\r"
+  m_text: "Oh, that old bugger. Yes, yes, of course, Sammy and her pack of howling
+    monkeys. She has been in this city for just as long as I have been there. And
+    you could say that in the beginning, we worked well together. Preserving and
+    organizing the city to our likings but is quickly fell apart. We are just too
+    different. She\u2019s loud and wants to dance all the time. Always acting before
+    thinking."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
