@@ -7,6 +7,7 @@ using TMPro;
 public class InventoryButton : MonoBehaviour
 {
     private Item item;
+    private InventoryPopup inventoryPopup;
 
     [SerializeField]
     private TMP_Text itemName;
@@ -23,9 +24,10 @@ public class InventoryButton : MonoBehaviour
 
 
 
-    public void SetUp(Item _item)
+    public void SetUp(Item _item, InventoryPopup _inventoryPopup)
     {
         item = _item;
+        inventoryPopup = _inventoryPopup;
         itemImage.sprite = item.itemSprite;
         itemName.text = item.itemName;
         //itemGame.text = item.itemGame;
@@ -36,7 +38,7 @@ public class InventoryButton : MonoBehaviour
 
     public void OnClick()
     {
-        FindObjectOfType<InventoryPopup>().SetUp(item);
+        inventoryPopup.SetUp(item);
         FindObjectOfType<PageSwiper>().canSwipe = false;
     }
 

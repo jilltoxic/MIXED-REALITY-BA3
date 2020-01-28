@@ -5,6 +5,9 @@ using System.Linq;
 
 public class InventoryScript : MonoBehaviour
 {
+    [SerializeField]
+    private InventoryPopup inventoryPopup;
+    
     private List<Item> items;
     public ItemManager itemManager;
 
@@ -38,7 +41,7 @@ public class InventoryScript : MonoBehaviour
         foreach (Item item in items)
         {
             GameObject newButton = Instantiate(itemPrefab, itemPanel);
-            newButton.GetComponent<InventoryButton>().SetUp(item);
+            newButton.GetComponent<InventoryButton>().SetUp(item, inventoryPopup);
         }
     }
 }

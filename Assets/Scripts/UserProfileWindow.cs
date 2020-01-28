@@ -24,7 +24,11 @@ public class UserProfileWindow : MonoBehaviour
         if (UI.dirty)
         {
             UpdateUIValues();
-            FindObjectOfType<InventoryScript>().UpdateInventoryUI();
+            foreach(InventoryScript IS in FindObjectsOfType<InventoryScript>())
+            {
+                IS.UpdateInventoryUI();
+            }
+            
             UI.dirty = false;
         }
     }
