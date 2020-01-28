@@ -17,12 +17,12 @@ public class InventoryScript : MonoBehaviour
     void Start()
     {
         UpdateInventoryUI();
-    }
+        Debug.Log(items.Count);
 
-    // Update is called once per frame
-    void Update()
-    {
-
+        foreach(Item item in items)
+        {
+            Debug.Log(item.itemName);
+        }
     }
 
 
@@ -38,7 +38,7 @@ public class InventoryScript : MonoBehaviour
         foreach (Item item in items)
         {
             GameObject newButton = Instantiate(itemPrefab, itemPanel);
-            newButton.GetComponent<ItemButton>().SetUp(item);
+            newButton.GetComponent<InventoryButton>().SetUp(item);
         }
     }
 }

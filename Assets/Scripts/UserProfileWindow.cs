@@ -24,6 +24,7 @@ public class UserProfileWindow : MonoBehaviour
         if (UI.dirty)
         {
             UpdateUIValues();
+            FindObjectOfType<InventoryScript>().UpdateInventoryUI();
             UI.dirty = false;
         }
     }
@@ -32,7 +33,7 @@ public class UserProfileWindow : MonoBehaviour
     void UpdateUIValues()
     {
         UserNameText.text = CurrentUser.instance.username;
-        UserTeamText.text = CurrentUser.instance.team == 0 ? "Ruby Riders" : "Golden Circle";
+        UserTeamText.text = CurrentUser.instance.team == 0 ? "RUBY RIDERS" : "GOLDEN CIRCLE";
         //TeamLogo.color = CurrentUser.instance.team == 0 ? Color.red : Color.green;
         UserGoldAmountText.text = CurrentUser.instance.gold + " BOLDS";
         anotherUserGoldAmountText.text = CurrentUser.instance.gold + " BOLDS";
