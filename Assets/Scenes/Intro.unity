@@ -151,8 +151,58 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sounds:
-  - name: 
-    clip: {fileID: 0}
+  - name: UI_BackClose
+    clip: {fileID: 8300000, guid: 82c315c754f69364fa138484001a6901, type: 3}
+    volume: 0
+    pitch: 0
+    source: {fileID: 0}
+  - name: UI_Button
+    clip: {fileID: 8300000, guid: 2a11b63c2af6ea142a85ec8367833205, type: 3}
+    volume: 0
+    pitch: 0
+    source: {fileID: 0}
+  - name: UI_Denied
+    clip: {fileID: 8300000, guid: 43a840db56ee6d94bbb95f04382029a0, type: 3}
+    volume: 0
+    pitch: 0
+    source: {fileID: 0}
+  - name: UI_GotMoney
+    clip: {fileID: 8300000, guid: b4e7fd3eacdaca04e9e2346d3059a3c3, type: 3}
+    volume: 0
+    pitch: 0
+    source: {fileID: 0}
+  - name: UI_Login
+    clip: {fileID: 8300000, guid: aa60ee4ed6edecd40a38f463a0afc200, type: 3}
+    volume: 0
+    pitch: 0
+    source: {fileID: 0}
+  - name: UI_Lost
+    clip: {fileID: 8300000, guid: c734b42579f17024194882382eed6600, type: 3}
+    volume: 0
+    pitch: 0
+    source: {fileID: 0}
+  - name: UI_PopUp_ItemSpend
+    clip: {fileID: 8300000, guid: 152c0edf306a40b4a82445d748d26679, type: 3}
+    volume: 0
+    pitch: 0
+    source: {fileID: 0}
+  - name: UI_Scanned
+    clip: {fileID: 8300000, guid: 38f0a28bee9c247459b9a1311bc427df, type: 3}
+    volume: 0
+    pitch: 0
+    source: {fileID: 0}
+  - name: UI_SpendMoney
+    clip: {fileID: 8300000, guid: 27bef02e6f075334e8f768534d7eb948, type: 3}
+    volume: 0
+    pitch: 0
+    source: {fileID: 0}
+  - name: UI_TimerCharge
+    clip: {fileID: 8300000, guid: b4aed9114cbc4014bb79840749c04da9, type: 3}
+    volume: 0
+    pitch: 0
+    source: {fileID: 0}
+  - name: UI_Won
+    clip: {fileID: 8300000, guid: c95273ea1f2f6364aa7efcdc80437523, type: 3}
     volume: 0
     pitch: 0
     source: {fileID: 0}
