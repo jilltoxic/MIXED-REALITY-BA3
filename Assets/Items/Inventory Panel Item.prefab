@@ -247,6 +247,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemName: {fileID: 3244307476663687340}
+  itemGame: {fileID: 3244307478096808255}
   itemImage: {fileID: 1632928879609449455}
   itemText: {fileID: 3244307478096808255}
 --- !u!1 &3244307477987411570
@@ -334,7 +335,7 @@ GameObject:
   - component: {fileID: 3244307478096808254}
   - component: {fileID: 3244307478096808255}
   m_Layer: 5
-  m_Name: Text Item Description
+  m_Name: Text Item Game
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
