@@ -1302,7 +1302,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &889433471
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3218,7 +3218,7 @@ PrefabInstance:
     - target: {fileID: 1869618387805844779, guid: 73784477be55d7449b65851dce7a191d,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 1869618387805844779, guid: 73784477be55d7449b65851dce7a191d,
         type: 3}
@@ -3243,6 +3243,31 @@ PrefabInstance:
     - target: {fileID: 1869618387805844779, guid: 73784477be55d7449b65851dce7a191d,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 1869618387805844779, guid: 73784477be55d7449b65851dce7a191d,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1869618387805844779, guid: 73784477be55d7449b65851dce7a191d,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1869618387805844779, guid: 73784477be55d7449b65851dce7a191d,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 1584435990}
+    - target: {fileID: 1869618387805844779, guid: 73784477be55d7449b65851dce7a191d,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: SetActive
+      objectReference: {fileID: 0}
+    - target: {fileID: 1869618387805844779, guid: 73784477be55d7449b65851dce7a191d,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 1869618387836288382, guid: 73784477be55d7449b65851dce7a191d,
