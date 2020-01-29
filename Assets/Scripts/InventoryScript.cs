@@ -38,6 +38,11 @@ public class InventoryScript : MonoBehaviour
             items.Add(itemManager.items.Find(x => x.itemName == name));
         }
 
+        foreach(Transform child in itemPanel)
+        {
+            Destroy(child.gameObject);
+        }
+
         foreach (Item item in items)
         {
             GameObject newButton = Instantiate(itemPrefab, itemPanel);
@@ -47,9 +52,10 @@ public class InventoryScript : MonoBehaviour
 
     public void UseItem(Item _item)
     {
-        
         CurrentUser.instance.inventory.Remove(_item.itemName);
         items.Remove(_item);
+         
+        
         FirebaseManager.Instance.WriteNewUser(CurrentUser.instance);
         UpdateInventoryUI();
         

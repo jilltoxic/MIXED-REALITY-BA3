@@ -42,4 +42,9 @@ public class InventoryButton : MonoBehaviour
         FindObjectOfType<PageSwiper>().canSwipe = false;
     }
 
+    public void OnUse()
+    {
+        GameObject.Destroy(this);
+    }
+
 }
