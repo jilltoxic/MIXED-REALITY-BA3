@@ -14075,7 +14075,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &488865474
 RectTransform:
   m_ObjectHideFlags: 0
@@ -51828,6 +51828,8 @@ GameObject:
   - component: {fileID: 2013113817}
   - component: {fileID: 2013113819}
   - component: {fileID: 2013113818}
+  - component: {fileID: 2013113821}
+  - component: {fileID: 2013113820}
   m_Layer: 5
   m_Name: Panel POWER UP POPUP
   m_TagString: Untagged
@@ -51895,6 +51897,35 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2013113816}
   m_CullTransparentMesh: 0
+--- !u!114 &2013113820
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2013113816}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0dc82c375414cd2409ca7a4286c6c546, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  DialogueText: {fileID: 858231230}
+  currentPowerUp: 0
+--- !u!114 &2013113821
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2013113816}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4d295573b85f51242a2d20bf8c3ca73c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  location: {fileID: 11400000, guid: 6c2ea824338cf6e49be93e1464c8f617, type: 2}
+  textFieldRemainingTime: {fileID: 153547999}
+  timeIsRunning: 0
 --- !u!1 &2014743592
 GameObject:
   m_ObjectHideFlags: 0
@@ -56422,12 +56453,12 @@ PrefabInstance:
     - target: {fileID: 3402555327234192664, guid: a7d54b1ba4445764bbd5df3858d325ab,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0
+      value: 39
       objectReference: {fileID: 0}
     - target: {fileID: 3402555327234192664, guid: a7d54b1ba4445764bbd5df3858d325ab,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 3402555327234192664, guid: a7d54b1ba4445764bbd5df3858d325ab,
         type: 3}
@@ -56437,7 +56468,7 @@ PrefabInstance:
     - target: {fileID: 3402555327234192664, guid: a7d54b1ba4445764bbd5df3858d325ab,
         type: 3}
       propertyPath: m_SizeDelta.y
-      value: 0
+      value: 653.7
       objectReference: {fileID: 0}
     - target: {fileID: 3402555327234192664, guid: a7d54b1ba4445764bbd5df3858d325ab,
         type: 3}
@@ -56447,7 +56478,7 @@ PrefabInstance:
     - target: {fileID: 3402555327234192664, guid: a7d54b1ba4445764bbd5df3858d325ab,
         type: 3}
       propertyPath: m_AnchorMin.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3402555327234192664, guid: a7d54b1ba4445764bbd5df3858d325ab,
         type: 3}
@@ -56457,7 +56488,7 @@ PrefabInstance:
     - target: {fileID: 3402555327234192664, guid: a7d54b1ba4445764bbd5df3858d325ab,
         type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3402555327234192664, guid: a7d54b1ba4445764bbd5df3858d325ab,
         type: 3}

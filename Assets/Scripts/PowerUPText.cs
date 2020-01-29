@@ -9,7 +9,6 @@ public class PowerUPText : MonoBehaviour
     public TMP_Text DialogueText;
     public int currentPowerUp;
 
-    public TimerScript timer;
        
     // Update is called once per frame
     void Update()
