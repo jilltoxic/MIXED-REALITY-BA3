@@ -38,7 +38,7 @@ public class UserProfileWindow : MonoBehaviour
     {
         UserNameText.text = CurrentUser.instance.username;
         UserTeamText.text = CurrentUser.instance.team == 0 ? "RUBY RIDERS" : "GOLDEN CIRCLE";
-        //TeamLogo.color = CurrentUser.instance.team == 0 ? Color.red : Color.green;
+        //UserTeamText.color = CurrentUser.instance.team == 0 ? Color.green : Color.magenta;
         UserGoldAmountText.text = CurrentUser.instance.gold + " BOLDS";
         anotherUserGoldAmountText.text = CurrentUser.instance.gold + " BOLDS";
 
