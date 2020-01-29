@@ -5,9 +5,9 @@ using Vuforia;
 
 public class ImageTargetSetTimestamp : MonoBehaviour,
                                             ITrackableEventHandler
+   
 {
     private TrackableBehaviour mTrackableBehaviour;
-
     public Location location;
 
     void Start()

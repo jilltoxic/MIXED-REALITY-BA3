@@ -12,6 +12,7 @@ public class User
     public List<string> inventory;
     //public Dictionary<string, long> buffs;
     public List<long> buffs;
+    public int randomPowerUp;
     public int card;
     public int userScore;
     public int UserScore
@@ -82,6 +83,13 @@ public class User
         {
             buffs[location.locationID] = System.DateTime.Now.AddSeconds(location.locationCooldown).ToBinary();
         }
+
+        //here!
+        if(location.locationID == 0)
+        {
+            randomPowerUp = Random.Range(0, 15);
+        }
+
         FirebaseManager.Instance.WriteNewUser(this);
     }
 }
