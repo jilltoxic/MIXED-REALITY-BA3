@@ -837,105 +837,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 320444414}
   m_CullTransparentMesh: 0
---- !u!1 &361421246
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 361421247}
-  - component: {fileID: 361421249}
-  - component: {fileID: 361421248}
-  - component: {fileID: 361421250}
-  m_Layer: 5
-  m_Name: Panel Item
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &361421247
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 361421246}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 2109867229}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 461, y: 192}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &361421248
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 361421246}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0}
-  m_RaycastTarget: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
---- !u!222 &361421249
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 361421246}
-  m_CullTransparentMesh: 0
---- !u!114 &361421250
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 361421246}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 59f8146938fff824cb5fd77236b75775, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Padding:
-    m_Left: 254
-    m_Right: 0
-    m_Top: 20
-    m_Bottom: 0
-  m_ChildAlignment: 0
-  m_Spacing: 35.83
-  m_ChildForceExpandWidth: 1
-  m_ChildForceExpandHeight: 1
-  m_ChildControlWidth: 0
-  m_ChildControlHeight: 0
-  m_ChildScaleWidth: 0
-  m_ChildScaleHeight: 0
 --- !u!1 &470795826
 GameObject:
   m_ObjectHideFlags: 0
@@ -1394,6 +1295,7 @@ GameObject:
   - component: {fileID: 889433471}
   - component: {fileID: 889433473}
   - component: {fileID: 889433472}
+  - component: {fileID: 889433474}
   m_Layer: 5
   m_Name: Panel Shop Dialog
   m_TagString: Untagged
@@ -1462,6 +1364,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 889433470}
   m_CullTransparentMesh: 0
+--- !u!114 &889433474
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 889433470}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4d295573b85f51242a2d20bf8c3ca73c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  location: {fileID: 11400000, guid: 22b7727c1071ee14a96f8d9691671026, type: 2}
+  textFieldRemainingTime: {fileID: 153009134}
+  timeIsRunning: 0
 --- !u!114 &889957935 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 1869618388565622854, guid: 73784477be55d7449b65851dce7a191d,
@@ -1555,8 +1472,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1660865840}
   m_HandleRect: {fileID: 1660865839}
   m_Direction: 2
-  m_Value: 1.0000002
-  m_Size: 0.48714003
+  m_Value: 1.0000001
+  m_Size: 0.48714
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -2179,6 +2096,7 @@ GameObject:
   - component: {fileID: 1648396134}
   - component: {fileID: 1648396133}
   - component: {fileID: 1648396135}
+  - component: {fileID: 1648396136}
   m_Layer: 5
   m_Name: Shop Panel
   m_TagString: Untagged
@@ -2258,11 +2176,26 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a32f0b5dd462b9a4aa0436803c01f91c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  panel: {fileID: 361421247}
+  panel: {fileID: 2109867229}
   buttonPrefab: {fileID: 3967876249784669950, guid: 3e7697f98e28f874bba7ba0ec7188696,
     type: 3}
   itemManager: {fileID: 11400000, guid: 2881ad6ce2c0e7140ae8aad3bbddb47c, type: 2}
   userGoldAmountText: {fileID: 320444416}
+--- !u!114 &1648396136
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1648396131}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4d295573b85f51242a2d20bf8c3ca73c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  location: {fileID: 11400000, guid: 22b7727c1071ee14a96f8d9691671026, type: 2}
+  textFieldRemainingTime: {fileID: 1925593147}
+  timeIsRunning: 0
 --- !u!1 &1660483454
 GameObject:
   m_ObjectHideFlags: 0
@@ -3205,8 +3138,7 @@ RectTransform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 361421247}
+  m_Children: []
   m_Father: {fileID: 1836763532}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
