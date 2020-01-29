@@ -44,4 +44,14 @@ public class InventoryScript : MonoBehaviour
             newButton.GetComponent<InventoryButton>().SetUp(item, inventoryPopup);
         }
     }
+
+    public void UseItem(Item _item)
+    {
+        
+        CurrentUser.instance.inventory.Remove(_item.itemName);
+        items.Remove(_item);
+        FirebaseManager.Instance.WriteNewUser(CurrentUser.instance);
+        UpdateInventoryUI();
+        
+    }
 }

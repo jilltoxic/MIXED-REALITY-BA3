@@ -43,7 +43,7 @@ public class InventoryPopup : MonoBehaviour
 
     public void UseItemButton()
     {
-        //FindObjectOfType<Shop>().BuyItem(item);
+        FindObjectOfType<InventoryScript>().UseItem(item);
     }
 
 }
