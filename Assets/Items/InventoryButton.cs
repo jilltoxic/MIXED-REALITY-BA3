@@ -13,6 +13,9 @@ public class InventoryButton : MonoBehaviour
     private TMP_Text itemName;
 
     [SerializeField]
+    private TMP_Text itemGame;
+
+    [SerializeField]
     private Image itemImage;
 
     [SerializeField]
@@ -30,8 +33,8 @@ public class InventoryButton : MonoBehaviour
         inventoryPopup = _inventoryPopup;
         itemImage.sprite = item.itemSprite;
         itemName.text = item.itemName;
-        //itemGame.text = item.itemGame;
-        itemText.text = item.itemText.ToString();
+        itemGame.text = item.itemGame;
+        //itemText.text = item.itemText.ToString();
 
         GetComponentInChildren<Button>().onClick.AddListener(() => OnClick());
     }
