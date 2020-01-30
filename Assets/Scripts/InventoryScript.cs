@@ -23,6 +23,7 @@ public class InventoryScript : MonoBehaviour
 
     void Start()
     {
+
         UpdateInventoryUI();
         Debug.Log(items.Count);
 
@@ -36,15 +37,6 @@ public class InventoryScript : MonoBehaviour
     public void UpdateInventoryUI()
     {
         items = new List<Item>();
-
-        if(items.Count == 0)
-        {
-            emptyInventoryText.SetActive(true);
-        }
-        else
-        {
-            emptyInventoryText.SetActive(false);
-        }
 
         foreach (string name in CurrentUser.instance.inventory)
         {
@@ -60,6 +52,15 @@ public class InventoryScript : MonoBehaviour
         {
             GameObject newButton = Instantiate(itemPrefab, itemPanel);
             newButton.GetComponent<InventoryButton>().SetUp(item, inventoryPopup);
+        }
+
+        if (items.Count == 0)
+        {
+            emptyInventoryText.SetActive(true);
+        }
+        else
+        {
+            emptyInventoryText.SetActive(false);
         }
     }
 
