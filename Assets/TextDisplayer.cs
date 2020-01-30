@@ -11,6 +11,7 @@ public class TextDisplayer : MonoBehaviour
     public GameObject Story4;
     public GameObject Story5;
     public GameObject Story6;
+    public GameObject Story7;
     private float counter;
     public float Story1Start;
     public float Story2Start;
@@ -18,6 +19,7 @@ public class TextDisplayer : MonoBehaviour
     public float Story4Start;
     public float Story5Start;
     public float Story6Start;
+    public float Story7Start;
     public float ChangeScene;
 
 

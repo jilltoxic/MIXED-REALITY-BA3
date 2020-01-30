@@ -297,6 +297,7 @@ GameObject:
   - component: {fileID: 1525100012}
   - component: {fileID: 1525100011}
   - component: {fileID: 1525100010}
+  - component: {fileID: 1525100013}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -369,6 +370,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1525100013
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1525100009}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e6a56e0ec7797d043bbca9dadcf3438c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1758541611
 GameObject:
   m_ObjectHideFlags: 0
@@ -556,6 +569,31 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4091776171096606434, guid: c0f8eaaec6af850438f20c58bdc001e9,
+        type: 3}
+      propertyPath: sounds.Array.size
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 4091776171096606434, guid: c0f8eaaec6af850438f20c58bdc001e9,
+        type: 3}
+      propertyPath: sounds.Array.data[11].name
+      value: UI_Intro
+      objectReference: {fileID: 0}
+    - target: {fileID: 4091776171096606434, guid: c0f8eaaec6af850438f20c58bdc001e9,
+        type: 3}
+      propertyPath: sounds.Array.data[11].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: 394c19c5bdecd29419138630e32d656f, type: 3}
+    - target: {fileID: 4091776171096606434, guid: c0f8eaaec6af850438f20c58bdc001e9,
+        type: 3}
+      propertyPath: sounds.Array.data[11].volume
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4091776171096606434, guid: c0f8eaaec6af850438f20c58bdc001e9,
+        type: 3}
+      propertyPath: sounds.Array.data[11].pitch
+      value: 1.5
+      objectReference: {fileID: 0}
     - target: {fileID: 4091776171096606435, guid: c0f8eaaec6af850438f20c58bdc001e9,
         type: 3}
       propertyPath: m_LocalPosition.x
