@@ -10,6 +10,10 @@ using UnityEngine.UI;
 
 public class FirebaseManager
 {
+
+    public delegate void ErrorHappened(string errorMessage);
+    public static event ErrorHappened OnErrorHappened;
+
     static FirebaseAuth auth;
     public FirebaseAuth Auth
     {
@@ -62,6 +66,7 @@ public class FirebaseManager
                 task.Exception.Flatten().InnerExceptions[0] as Firebase.FirebaseException;
 
                 GetErrorMessage((AuthError)e.ErrorCode);
+                HandleError((AuthError)e.ErrorCode);
                 return;
             }
             if (task.IsFaulted)
@@ -73,9 +78,10 @@ public class FirebaseManager
                 task.Exception.Flatten().InnerExceptions[0] as Firebase.FirebaseException;
 
                 GetErrorMessage((AuthError)e.ErrorCode);
+                HandleError((AuthError)e.ErrorCode);
                 return;
 
-                
+
             }
 
             // Firebase user has been created.
@@ -126,6 +132,8 @@ public class FirebaseManager
                 task.Exception.Flatten().InnerExceptions[0] as Firebase.FirebaseException;
 
                 GetErrorMessage((AuthError)e.ErrorCode);
+                HandleError((AuthError)e.ErrorCode);
+
                 return;
             }
 
@@ -153,19 +161,89 @@ public class FirebaseManager
     public void GetErrorMessage(AuthError errorCode)
     {
         string msg = "";
-        msg = errorCode.ToString();
-
+        msg = errorCode.ToString();   
         Debug.Log("Error: " + msg);
     }
 
+   
 
-    /// <summary>
-    /// Example Event that gets called when the user signs in/out
-    /// Could be used to switch the scene after login
-    /// </summary>
-    /// <param name="sender"></param>
-    /// <param name="eventArgs"></param>
-    public void AuthStateChanged(object sender, System.EventArgs eventArgs)
+    public void HandleError(AuthError errorCode)
+    {
+        string msg = "";
+        msg = errorCode.ToString();
+
+        string errorMessage = "";
+
+        switch (errorCode.ToString())
+        {
+            case "EmailAlreadyInUse":
+                {
+                    errorMessage = "This E-Mail is already in use.";
+                    break;
+                }
+
+            case "InvalidEmail":
+                {
+                    errorMessage = "<color=red>Please use a valid E-Mail.</color>";
+                    break;
+                }
+
+
+            case "WrongPassword":
+                {
+                    errorMessage = "The password is incorrect";
+                    break;
+                }
+
+            case "MissingEmail":
+             {
+                    errorMessage = "Please enter an Email.";
+                    break;
+             }
+             
+            case "MissingPassword":
+              {
+                errorMessage = "Please enter a Password.";
+                break;
+              }
+
+            case "TooManyRequests":
+                {
+                    errorMessage = "Too many requests. Please try again.";
+                    break;
+                }
+
+            case "UserNotFound":
+                {
+                    errorMessage = "User was not found.";
+                    break;
+                }
+
+            case "WeakPassword":
+                {
+                    errorMessage = "Please choose a stronger Password. (min. 6 characters)";
+                    break;
+                }
+
+            default:
+                {
+                    errorMessage = "Something is wrong.";
+                    break;
+                }
+        }
+
+        OnErrorHappened(errorMessage);
+        
+    }
+
+
+        /// <summary>
+        /// Example Event that gets called when the user signs in/out
+        /// Could be used to switch the scene after login
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="eventArgs"></param>
+        public void AuthStateChanged(object sender, System.EventArgs eventArgs)
     {
         if (Auth.CurrentUser != user)
         {
@@ -201,6 +279,7 @@ public class FirebaseManager
             {
                 // Handle the error...
                 Debug.LogError(task.Exception);
+                
                 return;
             }
             else if (task.IsCompleted)
