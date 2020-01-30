@@ -124,6 +124,7 @@ public class UserProfileWindow : MonoBehaviour
         if (CurrentUser.instance.UserScore >= 20)
             CurrentUser.instance.UserScore -= 20;
         else CurrentUser.instance.UserScore = 0;
+        FirebaseManager.Instance.UpdateUserValue(CurrentUser.instance, "gold", (CurrentUser.instance.gold + 10).ToString());
     }
 
     public void OnWonGame()
