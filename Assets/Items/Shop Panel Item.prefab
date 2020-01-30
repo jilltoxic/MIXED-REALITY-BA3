@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 3967876249784669949}
   - component: {fileID: 3967876249784669948}
   - component: {fileID: 6311943924712844059}
+  - component: {fileID: 3894493977496974344}
   m_Layer: 5
   m_Name: Shop Panel Item
   m_TagString: Untagged
@@ -118,7 +119,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 3967876249784669949}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 3894493977496974344}
+        m_MethodName: PlaySound
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &6311943924712844059
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -134,6 +146,18 @@ MonoBehaviour:
   itemName: {fileID: 3967876249810248847}
   itemGame: {fileID: 3967876249986390590}
   itemPrice: {fileID: 3967876249905469202}
+--- !u!114 &3894493977496974344
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3967876249784669950}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 736d95222c92af649a1361ce948dfd5d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &3967876249810248841
 GameObject:
   m_ObjectHideFlags: 0
