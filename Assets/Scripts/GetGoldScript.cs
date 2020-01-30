@@ -3,13 +3,14 @@ using System.Collections.Generic;
 using UnityEngine;
 using Vuforia;
 
-public class ImageTargetSetTimestamp : MonoBehaviour,
+public class GetGoldScript : MonoBehaviour,
                                             ITrackableEventHandler
-   
 {
-    private TrackableBehaviour mTrackableBehaviour;
-    public Location location;
 
+    private TrackableBehaviour mTrackableBehaviour;
+
+
+    // Start is called before the first frame update
     void Start()
     {
         mTrackableBehaviour = GetComponent<TrackableBehaviour>();
@@ -19,17 +20,20 @@ public class ImageTargetSetTimestamp : MonoBehaviour,
         }
     }
 
-    public void OnTrackableStateChanged(
-                                    TrackableBehaviour.Status previousStatus,
-                                    TrackableBehaviour.Status newStatus)
+    public void OnTrackableStateChanged(TrackableBehaviour.Status previousStatus, TrackableBehaviour.Status newStatus)
     {
         if (newStatus == TrackableBehaviour.Status.DETECTED ||
             newStatus == TrackableBehaviour.Status.TRACKED ||
             newStatus == TrackableBehaviour.Status.EXTENDED_TRACKED)
         {
-            if (location != null)
-                CurrentUser.instance.SetLocationTimestamp(location);
-
+          FirebaseManager.Instance.UpdateUserValue(CurrentUser.instance, "gold", (CurrentUser.instance.gold + 5).ToString());
         }
+        
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        
     }
 }
