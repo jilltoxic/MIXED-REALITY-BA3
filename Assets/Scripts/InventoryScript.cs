@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using UnityEngine;
 using System.Linq;
-using TMPro;
 
 public class InventoryScript : MonoBehaviour
 {
@@ -17,9 +16,6 @@ public class InventoryScript : MonoBehaviour
 
     [SerializeField]
     private Transform itemPanel;
-
-    [SerializeField]
-    private GameObject emptyInventoryText;
 
     void Start()
     {
@@ -36,15 +32,6 @@ public class InventoryScript : MonoBehaviour
     public void UpdateInventoryUI()
     {
         items = new List<Item>();
-
-        if(items.Count == 0)
-        {
-            emptyInventoryText.SetActive(true);
-        }
-        else
-        {
-            emptyInventoryText.SetActive(false);
-        }
 
         foreach (string name in CurrentUser.instance.inventory)
         {
