@@ -8,7 +8,7 @@ public class TimerScript : MonoBehaviour
     public Location location;
     public TMP_Text textFieldRemainingTime;
     System.TimeSpan duration;
-   
+    [SerializeField]
     public bool timeIsRunning;
     
 
