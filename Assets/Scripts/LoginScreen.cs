@@ -3,16 +3,24 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
+using Firebase;
+using Firebase.Auth;
+using TMPro;
 
 public class LoginScreen : MonoBehaviour
 {
+    static FirebaseAuth auth;
+
     public InputField mailField, passwordField, displayNameField;
     public Toggle teamA, teamB;
     string displayName, emailAddress;
     FirebaseManager fbManager;
     bool wasRegistering;
 
-    public Text errorMessageText;
+    public TMP_Text errorMessageText;
+
+    bool dirtyFlag;
+    string errorMessage;
 
 
     void Start()
@@ -20,6 +28,24 @@ public class LoginScreen : MonoBehaviour
         fbManager = FirebaseManager.Instance;
         fbManager.InitializeFirebase();
         fbManager.Auth.StateChanged += AuthStateChanged;
+        FirebaseManager.OnErrorHappened += DisplayErrorMessage;
+    }
+
+    private void OnDestroy()
+    { 
+        FirebaseManager.OnErrorHappened -= DisplayErrorMessage;
+    }
+
+    private void Update()
+    {
+        if (dirtyFlag)
+        {
+            errorMessageText.text = errorMessage;
+            //Canvas.ForceUpdateCanvases();
+            //errorMessageText.gameObject.SetActive(false);
+            //errorMessageText.gameObject.SetActive(true);
+            dirtyFlag = false;
+        }
     }
 
     public void OnRegisterButton()
@@ -28,24 +54,16 @@ public class LoginScreen : MonoBehaviour
         string password = passwordField.text;
         string displayName = displayNameField.text;
         wasRegistering = true;
+        DisplayErrorMessage("");
+
+        if (displayName == "")
+        {
+            errorMessage = "Please enter a username.";
+            return;
+        }
+
         fbManager.RegisterUser(mail, password, displayName);
 
-        if(mailField.text == "")
-        {
-            errorMessageText.text = "Please enter an E-Mail address.";
-        }
-        else if(passwordField.text == "")
-        {
-            errorMessageText.text = "Please enter a password.";
-        }
-        else if (displayNameField.text == "")
-        {
-            errorMessageText.text = "Please enter a username.";
-        }
-        else
-        {
-            errorMessageText.text = "";
-        }
     }
 
     void SetUserData()
@@ -76,7 +94,8 @@ public class LoginScreen : MonoBehaviour
     {
         string mail = mailField.text;
         string password = passwordField.text;
-        fbManager.LoginUser(mail, password);       
+        fbManager.LoginUser(mail, password);
+        DisplayErrorMessage("");
     }
 
     public void AuthStateChanged(object sender, System.EventArgs eventArgs)
@@ -105,4 +124,15 @@ public class LoginScreen : MonoBehaviour
             }
         }
     }
+
+    public void DisplayErrorMessage(string message)
+    {
+
+        //errorMessageText.text = errorMessage;
+        errorMessage = message;
+        dirtyFlag = true;
+
+        Debug.LogError(errorMessage);
+
+    }    
 }
