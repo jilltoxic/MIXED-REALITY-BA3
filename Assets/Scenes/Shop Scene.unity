@@ -1352,6 +1352,7 @@ GameObject:
   - component: {fileID: 817956593}
   - component: {fileID: 817956592}
   - component: {fileID: 817956595}
+  - component: {fileID: 817956596}
   m_Layer: 5
   m_Name: Button Continue
   m_TagString: Untagged
@@ -1433,6 +1434,17 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 817956596}
+        m_MethodName: PlaySound
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &817956593
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1479,6 +1491,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d72f1634d06d0e34a8b423641c7f9a15, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &817956596
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 817956590}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ba65ec8a2598ce9459fbc361638d8e3c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &858278991
@@ -1542,7 +1566,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &889433471
 RectTransform:
   m_ObjectHideFlags: 0
