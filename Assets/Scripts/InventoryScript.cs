@@ -36,6 +36,7 @@ public class InventoryScript : MonoBehaviour
 
     public void UpdateInventoryUI()
     {
+
         items = new List<Item>();
 
         foreach (string name in CurrentUser.instance.inventory)
@@ -62,6 +63,7 @@ public class InventoryScript : MonoBehaviour
         {
             emptyInventoryText.SetActive(false);
         }
+
     }
 
     public void UseItem(Item _item)
