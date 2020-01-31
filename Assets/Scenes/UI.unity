@@ -1110,7 +1110,6 @@ GameObject:
   m_Component:
   - component: {fileID: 43156348}
   - component: {fileID: 43156347}
-  - component: {fileID: 43156346}
   m_Layer: 0
   m_Name: Stage Camera
   m_TagString: Untagged
@@ -1118,14 +1117,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!81 &43156346
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 43156345}
-  m_Enabled: 1
 --- !u!20 &43156347
 Camera:
   m_ObjectHideFlags: 0
