@@ -7,6 +7,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using System.Linq;
 
 public class FirebaseManager
 {
@@ -320,10 +321,10 @@ public class FirebaseManager
         });
     }
 
-    //overwrites a user value in database
+    //overwrites a user value in databaseq
 
-    public void UpdateUserValue(User user, string key, string value)
-    {        
+    public void UpdateUserValue(User user, string key, object value)
+    {
         databaseReference.Child("users").Child(user.userID).Child(key).SetValueAsync(value).ContinueWith(task =>
         {
             if (task.IsFaulted)
@@ -343,9 +344,9 @@ public class FirebaseManager
 
     // -------------------------------- SCRUB LORDS TRYIN REAL HARD -----------------------------------------
 
-        /// <summary>
-        /// Updates both team scores. Don't use this.
-        /// </summary>
+    /// <summary>
+    /// Updates both team scores. Don't use this.
+    /// </summary>
     public void SetTeamScore() //no new score yet i have no idea what i am doing 
     {
         Debug.Log("Updating Team Score");
@@ -439,9 +440,10 @@ public class FirebaseManager
 
     public void GetAllUsers()
     {
+      
         Debug.Log("Retrieving All Users");
         databaseReference.Child("users").GetValueAsync().ContinueWith(task =>
-        {
+        { 
             if (task.IsFaulted)
             {
                 // Handle the error...
@@ -453,6 +455,7 @@ public class FirebaseManager
                 DataSnapshot userIDList = task.Result;
                 foreach (var userID in userIDList.Children)
                 {
+                    
                     GetUserInfo(userID.Key);
                 }
                 Debug.Log("Done");
@@ -460,9 +463,44 @@ public class FirebaseManager
             }
         });
     }
+
+    public void GetTopPlayers()
+    {
+        databaseReference.Child("users").OrderByChild("/userScore").GetValueAsync().ContinueWith(task =>
+            {
+                if (task.IsFaulted)
+                {
+                    // Handle the error...
+                    Debug.LogError(task.Exception);
+                    return;
+                }
+                else if (task.IsCompleted)
+                {
+                    /*int rank = 1;
+                    DataSnapshot userIDList = task.Result;
+
+                    foreach (DataSnapshot leader in userIDList.Children)
+                    //for (int i = 0; i < numberOfPlayers; i++)
+                    {
+                        Debug.LogWarning(rank + ". " + leader.Child("username").Value + " " + leader.Child("userScore").Value);
+                        rank++;
+                    }
+
+    */
+                    LeaderboardManager.data = task.Result;
+                    LeaderboardManager.dirtyFlag = true;
+                    Debug.Log("Done");
+                    return;
+                }
+        });
+
+
+    }
+
     public User GetUserInfo(string userID)
     {
-        User userInfo = new User();
+        User userInfo = new User();        
+
         Debug.Log("Retrieving User Info");
         databaseReference.Child("users").Child(userID).GetValueAsync().ContinueWith(task =>
         {
@@ -482,6 +520,10 @@ public class FirebaseManager
                 return;
             }
         });
+
+        
         return userInfo;
     }
+
+  
 }

@@ -21,7 +21,7 @@ public class User
         {
             int dif = value - userScore;
             userScore = value;
-            FirebaseManager.Instance.UpdateUserValue(CurrentUser.instance, "userScore", CurrentUser.instance.UserScore.ToString());
+            FirebaseManager.Instance.UpdateUserValue(CurrentUser.instance, "userScore", CurrentUser.instance.UserScore);
             FirebaseManager.Instance.SetOwnTeamScore(dif);
         }
         get { return userScore; }

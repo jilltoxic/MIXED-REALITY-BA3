@@ -109,10 +109,7 @@ public class UserProfileWindow : MonoBehaviour
                 
     }
 
-    public void BuyItem(int price)
-    {
-        
-    }
+
 
     
 
@@ -121,8 +118,8 @@ public class UserProfileWindow : MonoBehaviour
     public void OnLostGame()
     {
         //Important: Capital U in UserScore <-- Change Property, not variable
-        if (CurrentUser.instance.UserScore >= 20)
-            CurrentUser.instance.UserScore -= 20;
+        if (CurrentUser.instance.UserScore >= 10)
+            CurrentUser.instance.UserScore -= 10;
         else CurrentUser.instance.UserScore = 0;
         FirebaseManager.Instance.UpdateUserValue(CurrentUser.instance, "gold", (CurrentUser.instance.gold + 10).ToString());
     }
@@ -130,7 +127,7 @@ public class UserProfileWindow : MonoBehaviour
     public void OnWonGame()
     {
         //Important: Capital U in UserScore <-- Change Property, not variable
-        CurrentUser.instance.UserScore += 20;
+        CurrentUser.instance.UserScore += 10;
         FirebaseManager.Instance.UpdateUserValue(CurrentUser.instance, "gold", (CurrentUser.instance.gold + 10).ToString());
     }
 }
