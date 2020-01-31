@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PlayIntroSound : MonoBehaviour
 {
-    void OnAwake()
+    void Start()
     {
         FindObjectOfType<AudioManager>().Play("UI_Intro");
     }
