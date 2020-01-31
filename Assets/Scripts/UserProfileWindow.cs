@@ -131,5 +131,6 @@ public class UserProfileWindow : MonoBehaviour
     {
         //Important: Capital U in UserScore <-- Change Property, not variable
         CurrentUser.instance.UserScore += 20;
+        FirebaseManager.Instance.UpdateUserValue(CurrentUser.instance, "gold", (CurrentUser.instance.gold + 10).ToString());
     }
 }

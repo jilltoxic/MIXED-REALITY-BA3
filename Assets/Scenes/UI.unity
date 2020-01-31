@@ -6104,6 +6104,17 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 406703598}
+        m_MethodName: OnLostGame
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &208702376
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8098,6 +8109,17 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 265501738}
         m_MethodName: PlaySound
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 406703598}
+        m_MethodName: OnLostGame
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -10372,6 +10394,17 @@ MonoBehaviour:
       - m_Target: {fileID: 467056763}
         m_MethodName: CanSwipe
         m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 406703598}
+        m_MethodName: OnLostGame
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -14557,6 +14590,17 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 406703598}
+        m_MethodName: OnLostGame
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &478649752
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14772,6 +14816,7 @@ GameObject:
   - component: {fileID: 488865476}
   - component: {fileID: 488865475}
   - component: {fileID: 488865477}
+  - component: {fileID: 488865478}
   m_Layer: 5
   m_Name: Panel Locations
   m_TagString: Untagged
@@ -14861,6 +14906,19 @@ MonoBehaviour:
   m_ChildControlHeight: 1
   m_ChildScaleWidth: 0
   m_ChildScaleHeight: 1
+--- !u!114 &488865478
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 488865473}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b0f1da0d253cc54b8ddad9ebfa8bc0b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  noLocationsText: {fileID: 535992571}
 --- !u!1 &489337025
 GameObject:
   m_ObjectHideFlags: 0
@@ -16625,10 +16683,10 @@ RectTransform:
   m_Father: {fileID: 488865474}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.0020885468, y: -0.0033035278}
-  m_SizeDelta: {x: 679.43, y: 634.05}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 378.715, y: -473.065}
+  m_SizeDelta: {x: 679.43, y: 349.27002}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &535992573
 MonoBehaviour:
@@ -16791,8 +16849,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: 26, y: 81}
-  m_SizeDelta: {x: 798.84, y: 37.200012}
+  m_AnchoredPosition: {x: 0.000022888, y: 74}
+  m_SizeDelta: {x: 808.3, y: 51.2}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &536139193
 MonoBehaviour:
@@ -20471,7 +20529,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &692506466
 RectTransform:
   m_ObjectHideFlags: 0
@@ -27926,6 +27984,17 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
+      - m_Target: {fileID: 488865478}
+        m_MethodName: CheckAllLocations
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
 --- !u!114 &962128417
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -29928,6 +29997,17 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 1094397944}
         m_MethodName: PlaySound
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 406703598}
+        m_MethodName: OnLostGame
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -49208,6 +49288,17 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 406703598}
+        m_MethodName: OnLostGame
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1817679225
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -59449,7 +59540,7 @@ PrefabInstance:
     - target: {fileID: 3402555327234192664, guid: a7d54b1ba4445764bbd5df3858d325ab,
         type: 3}
       propertyPath: m_SizeDelta.y
-      value: 653.7
+      value: 304.38
       objectReference: {fileID: 0}
     - target: {fileID: 3402555327234192664, guid: a7d54b1ba4445764bbd5df3858d325ab,
         type: 3}

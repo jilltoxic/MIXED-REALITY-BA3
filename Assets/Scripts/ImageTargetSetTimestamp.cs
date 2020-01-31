@@ -29,6 +29,8 @@ public class ImageTargetSetTimestamp : MonoBehaviour,
         {
             if (location != null)
                 CurrentUser.instance.SetLocationTimestamp(location);
+           
+
 
         }
     }
