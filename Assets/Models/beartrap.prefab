@@ -88,6 +88,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 9219156718862855519}
+  - component: {fileID: 3117382061228199547}
   m_Layer: 0
   m_Name: beartrap
   m_TagString: Untagged
@@ -113,6 +114,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: -37.909, y: 1.9300001, z: 5.609}
+--- !u!114 &3117382061228199547
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5308160561449475916}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1917f585ddc75794aa2fd6a6cc244a78, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spinn: 20
 --- !u!1 &6497174209752078412
 GameObject:
   m_ObjectHideFlags: 0

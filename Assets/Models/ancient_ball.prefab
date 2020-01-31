@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 2936274917575851924}
   - component: {fileID: 6189274940239267234}
   - component: {fileID: 493198788412553563}
+  - component: {fileID: -8859850712371898456}
   m_Layer: 0
   m_Name: ancient_ball
   m_TagString: Untagged
@@ -79,3 +80,16 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!114 &-8859850712371898456
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2226158807110225287}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1917f585ddc75794aa2fd6a6cc244a78, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spinn: 20
