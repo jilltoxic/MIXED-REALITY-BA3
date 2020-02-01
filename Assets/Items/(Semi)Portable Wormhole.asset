@@ -18,3 +18,5 @@ MonoBehaviour:
   itemPrice: 30
   itemGame: Cloak-Bullet-Lasercutter
   itemSprite: {fileID: 21300000, guid: 1a37f2d008da4fe4cb1e5e7eea14a3d1, type: 3}
+  modelPrefab: {fileID: 8051166044346074125, guid: 30cadec1c97bd8045ad6f321e2040912,
+    type: 3}

@@ -17,3 +17,5 @@ MonoBehaviour:
   itemPrice: 10
   itemGame: Wrestling
   itemSprite: {fileID: 21300000, guid: f5ef3d87429199949a30a37bf7622ab4, type: 3}
+  modelPrefab: {fileID: 8380444731629848370, guid: ef6412442fdf2094db889e4bed988a94,
+    type: 3}

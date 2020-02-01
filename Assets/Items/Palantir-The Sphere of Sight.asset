@@ -17,3 +17,5 @@ MonoBehaviour:
   itemPrice: 10
   itemGame: Mexican Standoff
   itemSprite: {fileID: 21300000, guid: eb0ea2d67d64df444881cbb992c5405e, type: 3}
+  modelPrefab: {fileID: 2226158807110225287, guid: 5fd58968312da6948b0b7d826b012e49,
+    type: 3}
