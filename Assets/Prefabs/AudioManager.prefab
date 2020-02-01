@@ -45,7 +45,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sounds:
   - name: UI_BackClose
-    clip: {fileID: 8300000, guid: 82c315c754f69364fa138484001a6901, type: 3}
+    clip: {fileID: 8300000, guid: b8598eed4721a14448f99a76acabe695, type: 3}
     volume: 1
     pitch: 1.15
     source: {fileID: 0}
@@ -101,6 +101,11 @@ MonoBehaviour:
     source: {fileID: 0}
   - name: UI_ReputationIncreased
     clip: {fileID: 8300000, guid: a5d66dba032ebf94db91ae281c72411c, type: 3}
+    volume: 1
+    pitch: 1.5
+    source: {fileID: 0}
+  - name: Tutuorial
+    clip: {fileID: 8300000, guid: 47f2e8361910c7e469df7f98c961e2c5, type: 3}
     volume: 1
     pitch: 1.5
     source: {fileID: 0}
