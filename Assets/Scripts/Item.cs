@@ -10,5 +10,7 @@ public class Item : ScriptableObject
     public int itemPrice;
     public string itemGame;
     public Sprite itemSprite;
+    public GameObject modelPrefab;
+    //public Transform modelParent;
 }
     
