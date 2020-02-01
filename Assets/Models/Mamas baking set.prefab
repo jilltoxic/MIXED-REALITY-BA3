@@ -46,7 +46,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1917f585ddc75794aa2fd6a6cc244a78, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spinn: 20
+  spinnX: 0
+  spinnY: 20
+  spinnZ: 0
 --- !u!1001 &94551223110569584
 PrefabInstance:
   m_ObjectHideFlags: 0
