@@ -11,6 +11,7 @@ public class UserProfileWindow : MonoBehaviour
     public TMP_Text anotherUserGoldAmountText;
     public TMP_Text rubyScoreText, goldenScoreText;
     public Image TeamLogo;
+    
 
     public Slider teamScoreSlider;
     
@@ -38,11 +39,11 @@ public class UserProfileWindow : MonoBehaviour
     {
         UserNameText.text = CurrentUser.instance.username;
         UserTeamText.text = CurrentUser.instance.team == 0 ? "RUBY RIDERS" : "GOLDEN CIRCLE";
-        //UserTeamText.color = CurrentUser.instance.team == 0 ? Color.green : Color.magenta;
-        UserGoldAmountText.text = CurrentUser.instance.gold + " BOLDS";
-        anotherUserGoldAmountText.text = CurrentUser.instance.gold + " BOLDS";
+        UserTeamText.color = CurrentUser.instance.team == 0 ? new Color32(14,154,26, 255) : new Color32(174,69,153, 255);
+        UserGoldAmountText.text = CurrentUser.instance.gold.ToString();
+        anotherUserGoldAmountText.text = CurrentUser.instance.gold.ToString();
 
-        userScoreText.text = CurrentUser.instance.UserScore.ToString() + " REPUTATION";
+        userScoreText.text = CurrentUser.instance.UserScore.ToString() + "RP";
 
         rubyScoreText.text = CurrentTeamScore.instance.RubyRiderScore.ToString();
         goldenScoreText.text = CurrentTeamScore.instance.GoldenCircleScore.ToString();
