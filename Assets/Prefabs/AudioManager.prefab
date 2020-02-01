@@ -50,7 +50,7 @@ MonoBehaviour:
     pitch: 1.15
     source: {fileID: 0}
   - name: UI_Button
-    clip: {fileID: 8300000, guid: 2a11b63c2af6ea142a85ec8367833205, type: 3}
+    clip: {fileID: 8300000, guid: 5ba1670aa252d9a4f81eccc4d0204c57, type: 3}
     volume: 1
     pitch: 1.5
     source: {fileID: 0}
@@ -65,12 +65,12 @@ MonoBehaviour:
     pitch: 1.5
     source: {fileID: 0}
   - name: UI_Login
-    clip: {fileID: 8300000, guid: aa60ee4ed6edecd40a38f463a0afc200, type: 3}
+    clip: {fileID: 8300000, guid: 1987443c61e8c8f468b58132fa52f6a5, type: 3}
     volume: 1
     pitch: 1.5
     source: {fileID: 0}
   - name: UI_Lost
-    clip: {fileID: 8300000, guid: c734b42579f17024194882382eed6600, type: 3}
+    clip: {fileID: 8300000, guid: c225fdb9ba0b08445b5c5e077d843bb7, type: 3}
     volume: 1
     pitch: 1.5
     source: {fileID: 0}
@@ -95,7 +95,12 @@ MonoBehaviour:
     pitch: 1.5
     source: {fileID: 0}
   - name: UI_Won
-    clip: {fileID: 8300000, guid: c95273ea1f2f6364aa7efcdc80437523, type: 3}
+    clip: {fileID: 8300000, guid: 91ab5c91b9168544a8734dc3b8116b74, type: 3}
+    volume: 1
+    pitch: 1.5
+    source: {fileID: 0}
+  - name: UI_ReputationIncreased
+    clip: {fileID: 8300000, guid: a5d66dba032ebf94db91ae281c72411c, type: 3}
     volume: 1
     pitch: 1.5
     source: {fileID: 0}
