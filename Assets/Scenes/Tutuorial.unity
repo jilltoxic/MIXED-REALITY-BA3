@@ -1901,7 +1901,7 @@ GameObject:
   - component: {fileID: 777423031}
   - component: {fileID: 777423030}
   m_Layer: 5
-  m_Name: 7
+  m_Name: Panel Story 7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

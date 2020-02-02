@@ -59,10 +59,15 @@ public class TextDisplayer : MonoBehaviour
             Story4.SetActive(false);
             Story5.SetActive(true);
         }
-        else if (counter >= Story6Start && counter <= ChangeScene)
+        else if (counter >= Story6Start && counter <= Story7Start)
         {
             Story5.SetActive(false);
             Story6.SetActive(true);
+        }
+        else if (counter >= Story7Start && counter <= ChangeScene)
+        {
+            Story6.SetActive(false);
+            Story7.SetActive(true);
         }
         else if (counter >= ChangeScene)
         {
