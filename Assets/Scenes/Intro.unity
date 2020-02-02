@@ -426,7 +426,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a902347ae13991448874db7b393a1a47, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  TimeUntilDestroyable: 3
+  TimeUntilDestroyable: 2.5
   IntroSound: {fileID: 873511042}
 --- !u!1 &1525100009
 GameObject:
