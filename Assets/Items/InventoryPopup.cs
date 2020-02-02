@@ -45,6 +45,14 @@ public class InventoryPopup : MonoBehaviour
             
     }
 
+    private void Update()
+    {
+        if(panel.active == false)
+        {
+            Destroy(newModel);
+        }
+    }
+
     public void SetUp(Item _item)
     {
         Destroy(newModel);
