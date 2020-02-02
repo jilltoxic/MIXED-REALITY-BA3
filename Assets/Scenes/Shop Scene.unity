@@ -1896,7 +1896,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &889433471
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2596,6 +2596,8 @@ MonoBehaviour:
   itemGame: {fileID: 889957935}
   itemPrice: {fileID: 1347667164}
   itemImage: {fileID: 1138550865}
+  newModel: {fileID: 0}
+  stageCam: {fileID: 0}
   panel: {fileID: 1584435990}
 --- !u!114 &1347667164 stripped
 MonoBehaviour:
@@ -3801,7 +3803,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1765892662}
   - component: {fileID: 1765892661}
-  - component: {fileID: 1765892660}
   m_Layer: 0
   m_Name: Stage Camera
   m_TagString: Untagged
@@ -3809,14 +3810,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!81 &1765892660
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1765892659}
-  m_Enabled: 1
 --- !u!20 &1765892661
 Camera:
   m_ObjectHideFlags: 0
