@@ -4243,7 +4243,7 @@ MonoBehaviour:
   itemPrefab: {fileID: 3244307477439386738, guid: 84a0b83deaae368499fa624a68d8ab1a,
     type: 3}
   itemPanel: {fileID: 99505076}
-  emptyInventoryText: {fileID: 0}
+  emptyInventoryText: {fileID: 1146030928}
 --- !u!1 &169019045
 GameObject:
   m_ObjectHideFlags: 0
