@@ -375,7 +375,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Name '
+  m_text: 'Name
+
+'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 0b371ecd0c8dbdc40af6793d033c3a43, type: 2}
   m_sharedMaterial: {fileID: -8211340018160327305, guid: 0b371ecd0c8dbdc40af6793d033c3a43,
@@ -404,20 +406,20 @@ MonoBehaviour:
   m_outlineColor:
     serializedVersion: 2
     rgba: 4278190080
-  m_fontSize: 52.65
+  m_fontSize: 46.55
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
-  m_fontSizeMin: 18
-  m_fontSizeMax: 72
+  m_fontSizeMin: 19.1
+  m_fontSizeMax: 54.5
   m_fontStyle: 1
   m_textAlignment: 258
-  m_characterSpacing: 0
-  m_wordSpacing: 0
-  m_lineSpacing: 0
-  m_lineSpacingMax: 0
+  m_characterSpacing: -3.9
+  m_wordSpacing: 3.66
+  m_lineSpacing: 2.61
+  m_lineSpacingMax: -8.3
   m_paragraphSpacing: 0
-  m_charWidthMaxAdj: 0
+  m_charWidthMaxAdj: 5.4
   m_enableWordWrapping: 1
   m_wordWrappingRatios: 0.4
   m_overflowMode: 0
@@ -442,7 +444,7 @@ MonoBehaviour:
   m_firstVisibleCharacter: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_margin: {x: 15.041626, y: -4.845398, z: -10.698654, w: 12.979164}
   m_textInfo:
     textComponent: {fileID: 3849388430527751111}
     characterCount: 5

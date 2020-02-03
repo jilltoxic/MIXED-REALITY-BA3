@@ -15,11 +15,16 @@ public class Shop : MonoBehaviour
     private ItemManager itemManager;
 
     [SerializeField]
+    private GameObject noMoneyPanel;
+
+    [SerializeField]
     private TMP_Text userGoldAmountText;
 
 
     void Start()
     {
+
+        noMoneyPanel.SetActive(false);
 
         foreach (Item item in itemManager.items)
         {
@@ -39,6 +44,11 @@ public class Shop : MonoBehaviour
             FirebaseManager.Instance.WriteNewUser(CurrentUser.instance);
             UpdateShopUI();
         }
+        else
+        {
+            noMoneyPanel.SetActive(true);
+        }
+        
     }
 
     public void UpdateShopUI()
