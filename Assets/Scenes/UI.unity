@@ -1449,7 +1449,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: 2, y: 156}
+  m_AnchoredPosition: {x: 2, y: 203}
   m_SizeDelta: {x: 360.5, y: 86.19995}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &55987951
@@ -10454,7 +10454,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &336917222
 RectTransform:
   m_ObjectHideFlags: 0
@@ -10538,8 +10538,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9732e0f92c3571743bb92246f9a9666a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  RubyRiderManual: {fileID: 0}
-  GoldenCircleManual: {fileID: 0}
+  RubyRiderManual: {fileID: 332342271}
+  GoldenCircleManual: {fileID: 679106177}
 --- !u!1 &354993677
 GameObject:
   m_ObjectHideFlags: 0
